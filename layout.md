@@ -16,3 +16,4 @@ Magical thinking.tex
 Messy with Lurkers.tex
 Misunderstanding power.tex
 Navel Gazing.tex
+Stasis.tex
