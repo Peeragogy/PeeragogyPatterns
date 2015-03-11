@@ -4,6 +4,7 @@ Discerning a pattern.tex
 Polling for ideas.tex
 Creating a guide.tex
 Newcomer.tex
+Roadmap.tex
 Roles.tex
 A specific project.tex
 Carrying capacity.tex
