@@ -7,3 +7,4 @@ Creating a guide.tex
 Newcomer.tex
 Roles.tex
 Specific project.tex
+Carrying capacity.tex
