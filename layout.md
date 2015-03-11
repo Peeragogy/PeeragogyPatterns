@@ -5,7 +5,7 @@ Polling for ideas.tex
 Creating a guide.tex
 Newcomer.tex
 Roles.tex
-Specific project.tex
+A specific project.tex
 Carrying capacity.tex
 Heartbeat.tex
 Moderation.tex
