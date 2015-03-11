@@ -12,3 +12,4 @@ Heartbeat.tex
 Moderation.tex
 Use or make.tex
 Isolation.tex
+Magical thinking.tex
