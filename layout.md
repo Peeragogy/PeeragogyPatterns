@@ -11,3 +11,4 @@ Carrying capacity.tex
 Heartbeat.tex
 Moderation.tex
 Use or make.tex
+Isolation.tex
