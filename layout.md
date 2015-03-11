@@ -6,3 +6,4 @@ Polling for ideas.tex
 Creating a guide.tex
 Newcomer.tex
 Roles.tex
+Specific project.tex
