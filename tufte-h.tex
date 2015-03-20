@@ -1,0 +1,85 @@
+\documentclass{tufte-handout}
+
+\usepackage[T1]{fontenc} 
+\usepackage[utf8]{inputenc}
+
+%\geometry{showframe}% for debugging purposes -- displays the margins
+
+\usepackage{amsmath}
+
+% Set up the images/graphics package
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{graphics/}}
+
+\title{Peeragogy Pattern Catalog}
+\author[Joe Corneli]{Joe Corneli, Awaiting Activation, Charlotte Pierce}
+%\date{24 January 2009}  % if the \date{} command is left out, the current date will be used
+
+% The following package makes prettier tables.  We're all about the bling!
+\usepackage{booktabs}
+
+% The units package provides nice, non-stacked fractions and better spacing
+% for units.
+\usepackage{units}
+
+% The fancyvrb package lets us customize the formatting of verbatim
+% environments.  We use a slightly smaller font.
+\usepackage{fancyvrb}
+\fvset{fontsize=\normalsize}
+
+% Small sections of multiple columns
+\usepackage{multicol}
+
+% Provides paragraphs of dummy text
+\usepackage{lipsum}
+
+% These commands are used to pretty-print LaTeX commands
+\newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
+\newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument
+\newcommand{\docarg}[1]{\textrm{\textit{#1}}}% (required) command argument
+\newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
+\newcommand{\docenv}[1]{\textsf{#1}}% environment name
+\newcommand{\docpkg}[1]{\texttt{#1}}% package name
+\newcommand{\doccls}[1]{\texttt{#1}}% document class name
+\newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
+
+
+
+\let\subsubsection\paragraph
+
+\begin{document}
+
+\maketitle% this prints the handout title, author, and date
+
+\bibliographystyle{plainnat}
+
+
+
+
+
+\input{"Introduction.tex"}
+\input{"Wrapper.tex"}
+\input{"Discerning\space a\space pattern.tex"}
+\input{"Polling\space for\space ideas.tex"}
+\input{"Creating\space a\space guide.tex"}
+\input{"Newcomer.tex"}
+\input{"Roadmap.tex"}
+\input{"Roles.tex"}
+\input{"A\space specific\space project.tex"}
+\input{"Carrying\space capacity.tex"}
+\input{"Heartbeat.tex"}
+\input{"Moderation.tex"}
+\input{"Use\space or\space make.tex"}
+\input{"Isolation.tex"}
+\input{"Magical\space thinking.tex"}
+\input{"Messy\space with\space Lurkers.tex"}
+\input{"Misunderstanding\space power.tex"}
+\input{"Navel\space Gazing.tex"}
+\input{"Stasis.tex"}
+\input{"Stuck.tex"}
+\input{"Distributed\space Roadmap.tex"}
+
+
+\end{document}
+
