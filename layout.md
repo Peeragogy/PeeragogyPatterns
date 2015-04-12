@@ -1,6 +1,6 @@
+section_Roadmap_for_This_Doc__.tex
 Introduction.tex
 figures/pattern-language/pattern-language.jpg
-section_Roadmap_for_This_Doc__.tex
 Wrapper.tex
 Discerning a pattern.tex
 Polling for ideas.tex
