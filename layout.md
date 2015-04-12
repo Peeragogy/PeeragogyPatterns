@@ -20,3 +20,4 @@ Navel Gazing.tex
 Stasis.tex
 Stuck.tex
 Distributed Roadmap.tex
+figures/PBC/PBC.png
