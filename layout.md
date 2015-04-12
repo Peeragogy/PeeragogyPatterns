@@ -1,4 +1,5 @@
 section_Roadmap_for_This_Doc__.tex
+figures/attack-on-titan/attack-on-titan.jpg
 Introduction.tex
 figures/pattern-language/pattern-language.jpg
 Wrapper.tex
