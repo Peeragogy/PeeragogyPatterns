@@ -21,3 +21,4 @@ Stasis.tex
 Stuck.tex
 Distributed Roadmap.tex
 figures/PBC/PBC.png
+section_January_Meeting_Ideas_MARCH__.tex
