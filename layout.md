@@ -1,5 +1,5 @@
-Wrapper.tex
 Introduction.tex
+Wrapper.tex
 figures/pattern-language/pattern-language.jpg
 Discerning a pattern.tex
 Polling for ideas.tex
