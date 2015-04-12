@@ -1,6 +1,6 @@
 section_Roadmap_for_This_Doc__.tex
 figures/attack-on-titan/attack-on-titan.jpg
-Patterns Introduction.tex
+Introduction.tex
 figures/pattern-language/pattern-language.jpg
 Wrapper.tex
 Discerning a pattern.tex
