@@ -1,3 +1,4 @@
+Guide to the Document.tex
 Introduction.tex
 figures/pattern-language/pattern-language.jpg
 Wrapper.tex
