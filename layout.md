@@ -15,6 +15,7 @@ Carrying capacity.tex
 Heartbeat.tex
 Moderation.tex
 Use or make.tex
+Scrapbook.tex
 Isolation.tex
 Magical thinking.tex
 Messy with Lurkers.tex
@@ -22,7 +23,6 @@ Misunderstanding power.tex
 Navel Gazing.tex
 Stasis.tex
 Stuck.tex
-Scrapbook.tex
 figures/PBC/PBC.png
 section_January_Meeting_Ideas_MARCH__.tex
 section_April_19.tex
