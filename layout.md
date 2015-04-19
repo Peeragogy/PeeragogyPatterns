@@ -2,6 +2,7 @@ section_Roadmap_for_This_Doc__.tex
 figures/attack-on-titan/attack-on-titan.jpg
 Introduction.tex
 figures/pattern-language/pattern-language.jpg
+Distributed Roadmap.tex
 Wrapper.tex
 Discerning a pattern.tex
 Polling for ideas.tex
@@ -21,6 +22,7 @@ Misunderstanding power.tex
 Navel Gazing.tex
 Stasis.tex
 Stuck.tex
-Distributed Roadmap.tex
+Scrapbook.tex
 figures/PBC/PBC.png
 section_January_Meeting_Ideas_MARCH__.tex
+section_April_19.tex
