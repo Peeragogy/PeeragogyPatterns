@@ -1,6 +1,7 @@
 section_Roadmap_for_This_Doc__.tex
 figures/attack-on-titan/attack-on-titan.jpg
 Introduction.tex
+Template.tex
 figures/pattern-language/pattern-language.jpg
 Distributed Roadmap.tex
 Wrapper.tex
@@ -26,3 +27,4 @@ Stuck.tex
 figures/PBC/PBC.png
 section_January_Meeting_Ideas_MARCH__.tex
 section_April_19.tex
+Old_Pattern_Narrative.tex
