@@ -18,6 +18,7 @@ Moderation.tex
 Use or make.tex
 Audit.tex
 Scrapbook_Below_This_Line.tex
+Exercise_Redescribe_Antis.tex
 Isolation.tex
 Magical thinking.tex
 Messy with Lurkers.tex
