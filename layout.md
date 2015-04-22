@@ -1,7 +1,6 @@
 section_Roadmap_for_This_Doc__.tex
 figures/attack-on-titan/attack-on-titan.jpg
 Introduction.tex
-Template.tex
 figures/pattern-language/pattern-language.jpg
 Distributed Roadmap.tex
 Wrapper.tex
@@ -18,6 +17,7 @@ Moderation.tex
 Use or make.tex
 Pattern_Audit.tex
 Scrapbook_Below_This_Line.tex
+Template.tex
 Exercise_Redescribe_Antis.tex
 Isolation.tex
 Magical thinking.tex
