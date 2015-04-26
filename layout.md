@@ -12,7 +12,7 @@ Heartbeat.tex
 Creating a guide.tex
 Newcomer.tex
 Pattern_Audit.tex
-Scrapbook_Below_This_Line.tex
+Scrapbook.tex
 Distributed Roadmap.tex
 Discerning a pattern.tex
 Polling for ideas.tex
