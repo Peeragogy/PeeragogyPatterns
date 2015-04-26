@@ -1,6 +1,7 @@
 section_Roadmap_for_This_Doc__.tex
 figures/attack-on-titan/attack-on-titan.jpg
 Introduction.tex
+section_Peeragogy_Project_begin_quote__.tex
 figures/pattern-language/pattern-language.jpg
 Distributed Roadmap.tex
 Roadmap.tex
