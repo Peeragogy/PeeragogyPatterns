@@ -1,24 +1,22 @@
 section_Roadmap_for_This_Doc__.tex
 figures/attack-on-titan/attack-on-titan.jpg
-figures/peeragogy_dashboard_draft/peeragogy_dashboard_draft.jpg
-figures/use or make/use or make.png
 Introduction.tex
 figures/pattern-language/pattern-language.jpg
 Distributed Roadmap.tex
+Roadmap.tex
+Use or make.tex
+Carrying capacity.tex
+A specific project.tex
 Wrapper.tex
-Discerning a pattern.tex
-Polling for ideas.tex
+Heartbeat.tex
 Creating a guide.tex
 Newcomer.tex
-Roadmap.tex
-Roles.tex
-A specific project.tex
-Carrying capacity.tex
-Heartbeat.tex
-Moderation.tex
-Use or make.tex
 Pattern_Audit.tex
 Scrapbook_Below_This_Line.tex
+Discerning a pattern.tex
+Polling for ideas.tex
+Moderation.tex
+Roles.tex
 Template.tex
 Exercise_Redescribe_Antis.tex
 Isolation.tex
