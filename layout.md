@@ -1,9 +1,8 @@
 section_Roadmap_for_This_Doc__.tex
 figures/attack-on-titan/attack-on-titan.jpg
 Introduction.tex
-section_Peeragogy_Project_begin_quote__.tex
+Peeragogy_Project.tex
 figures/pattern-language/pattern-language.jpg
-Distributed Roadmap.tex
 Roadmap.tex
 Use or make.tex
 Carrying capacity.tex
@@ -14,6 +13,7 @@ Creating a guide.tex
 Newcomer.tex
 Pattern_Audit.tex
 Scrapbook_Below_This_Line.tex
+Distributed Roadmap.tex
 Discerning a pattern.tex
 Polling for ideas.tex
 Moderation.tex
