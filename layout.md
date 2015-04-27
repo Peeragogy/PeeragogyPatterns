@@ -1,4 +1,3 @@
-figures/attack-on-titan/attack-on-titan.jpg
 Introduction.tex
 Peeragogy_Project.tex
 figures/pattern-language/pattern-language.jpg
