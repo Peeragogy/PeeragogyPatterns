@@ -1,6 +1,5 @@
 Introduction.tex
 Peeragogy_Project.tex
-figures/pattern-language/pattern-language.jpg
 figures/patterns-language1/patterns-language1.png
 Roadmap.tex
 Use or make.tex
