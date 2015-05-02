@@ -1,7 +1,6 @@
 Introduction.tex
 Peeragogy_Project.tex
 figures/pattern-language/pattern-language.jpg
-figures/revised_pattern_diagram/revised_pattern_diagram.jpg
 Roadmap.tex
 Use or make.tex
 Carrying capacity.tex
