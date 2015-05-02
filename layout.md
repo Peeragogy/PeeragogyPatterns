@@ -1,5 +1,6 @@
 Introduction.tex
 Peeragogy_Project.tex
+figures/patterns-language2/patterns-language2.png
 Roadmap.tex
 Use or make.tex
 Carrying capacity.tex
