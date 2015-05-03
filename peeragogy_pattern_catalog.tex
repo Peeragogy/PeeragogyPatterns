@@ -18,10 +18,16 @@
 \usepackage{amsfonts,amsmath,amssymb}
 \usepackage{url}
 \usepackage[utf8]{inputenc}
+\PassOptionsToPackage{hyphens}{url}
 \usepackage{hyperref}
+\makeatletter
+\g@addto@macro{\UrlBreaks}{\UrlOrds}
+\makeatother
+%\usepackage[hyphenbreaks]{breakurl}
+%\usepackage[hyphens]{url}
 \hypersetup{colorlinks=false,pdfborder={0 0 0}}
-\usepackage{textcomp}
-\usepackage{longtable}
+%\usepackage{textcomp}
+%\usepackage{longtable}
 \usepackage{multirow,booktabs}
 
 \title{Patterns of Peeragogy}
