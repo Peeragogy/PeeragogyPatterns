@@ -2,13 +2,13 @@ Introduction.tex
 Peeragogy_Project.tex
 figures/patterns-language2/patterns-language2.png
 Roadmap.tex
-Use or make.tex
-Carrying capacity.tex
-A specific project.tex
+Use_or_make.tex
+Carrying_capacity.tex
+A_specific_project.tex
 Wrapper.tex
 Heartbeat.tex
-Creating a guide.tex
+Creating_a_guide.tex
 Newcomer.tex
 Pattern_Audit.tex
 Scrapbook.tex
-Distributed Roadmap.tex
+Distributed_Roadmap.tex
