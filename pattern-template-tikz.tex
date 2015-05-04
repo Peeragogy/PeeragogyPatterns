@@ -1,0 +1,22 @@
+\begin{tikzpicture}[framed, dot/.style={circle,inner sep=1pt,fill,name=#1}]
+\node (context) at (0, 0) {{ {\sc Context}}};
+\node (problem) at (2.5, 0) {{ {\sc Problem}}};
+\node (solution) at (5, 0) {{ {\sc Solution}}};
+\node (rationale) at (7.65, 0) {{ {\sc Rationale}}};
+\node (resolution) at (10.5, 0) {{ {\sc Resolution}}};
+\node (whatnext) at (13.25, 0) {{ {\sc What next}}};
+
+\node[below of=context] (where) {{ {\sc Where}}};
+\node[below of=problem] (what)  {{ {\sc What}}};
+\node[below of=solution] (how)  {{ {\sc How}}};
+\node[below of=rationale] (why) {{ {\sc Why}}};
+\node[below of=resolution] (who) {{ {\sc Who}}};
+\node[below of=whatnext] (when)  {{ {\sc When}}};
+
+\draw[-latex] (context) -- (where);
+\draw[-latex] (problem) -- (what);
+\draw[-latex] (solution) -- (how);
+\draw[-latex] (rationale) -- (why);
+\draw[-latex] (resolution) -- (who);
+\draw[-latex] (whatnext) -- (when);
+\end{tikzpicture}
