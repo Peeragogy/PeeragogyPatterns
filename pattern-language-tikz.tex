@@ -1,0 +1,46 @@
+\begin{tikzpicture}[dot/.style={circle,inner sep=1pt,fill,name=#1}]
+%\draw[step=1cm,gray,very thin] (0,0) grid (10,10);
+\node (assess) at (5, 9.75) {{\Large {\sc Assess}}};
+\node (organize) at (5, 0) {{\Large {\sc Organize}}};
+\node (cooperate)[text width=2cm,align=center,rotate=270] at (10, 5) {{\Large {\sc Convene}}};
+\node (convene)[text width=15cm,align=center,rotate=90] at (0, 5) {{\Large {\sc Cooperate}}};
+%%
+\node (roadmap) at (4.25,4.65) {\ref{sec:Roadmap}. \emph{Roadmap}};
+%%
+\node (useormake) at (3.15, 8.75) {\ref{sec:Use_or_make}. \hyperref[sec:Use_or_make]{\emph{Use or make?}}};
+\node (par) at (6.85, 8.75) {\ref{sec:Pattern_Audit_Routine}. \hyperref[sec:Pattern_Audit_Routine]{\emph{Pattern Audit Routine}}};
+%
+\node (carryingcapacity) at (1.25, 7.15) {\ref{sec:Carrying_capacity}. \hyperref[sec:Carrying_capacity]{\emph{Carrying capacity}}};
+\node (heartbeat) at (1.6, 4.5) {\ref{sec:Heartbeat}. \hyperref[sec:Heartbeat]{\emph{Heartbeat}}};
+%
+\node (aspecificproject) at (8.5, 6.5) {\ref{sec:A_specific_project}. \hyperref[sec:A_specific_project]{\emph{A specific project}}};
+\node (creatingaguide) at (6.85, 2) {\ref{sec:Creating_a_guide}. \hyperref[sec:Creating_a_guide]{\emph{Creating a guide}}};
+%
+\node (wrapper) at (2.5, 2) {\ref{sec:Wrapper}. \hyperref[sec:Wrapper]{\emph{Wrapper}}};
+\node (newcomer) at (8.5, 3.25) {\ref{sec:Newcomer}. \hyperref[sec:Newcomer]{\emph{Newcomer}}};
+\node (scrapbook) at (5, 1) {\ref{sec:Scrapbook}. \hyperref[sec:Scrapbook]{\emph{Scrapbook}}};
+%
+\node[below=2cm of newcomer] (peeragogyproject) {\ref{sec:Peeragogy_Project}. \emph{Peeragogy Project}};
+%
+\draw[-{Latex[width=2mm]},draw=gray] (peeragogyproject) -- ([xshift=0pt]newcomer.south);
+\draw[-{Latex[width=2mm]},draw=gray] (aspecificproject) -- (par);
+\draw[-{Latex[width=2mm]},draw=gray] (aspecificproject) -- (roadmap);
+\draw[-{Latex[width=2mm]},draw=gray] (carryingcapacity) -- (newcomer);
+\draw[-{Latex[width=2mm]},draw=gray] (carryingcapacity) -- (roadmap);
+\draw[-{Latex[width=2mm]},draw=gray] ([xshift=2mm]creatingaguide.160) to[out=-215,in=-67] (carryingcapacity);
+\draw[-{Latex[width=2mm]},draw=gray] (heartbeat) -- (newcomer);
+\draw[-{Latex[width=2mm]},draw=gray] (heartbeat) -- (scrapbook);
+\draw[-{Latex[width=2mm]},draw=gray] (heartbeat) -- (useormake);
+\draw[-{Latex[width=2mm]},draw=gray] (newcomer) -- ([xshift=4mm]useormake.south);
+\draw[-{Latex[width=2mm]},draw=gray] (newcomer) -- (aspecificproject);
+\draw[-{Latex[width=2mm]},draw=gray] (newcomer) -- (creatingaguide.north);
+\draw[-{Latex[width=2mm]},draw=gray] (newcomer) -- (roadmap);
+\draw[-{Latex[width=2mm]},draw=gray] (par) -- (scrapbook);
+\draw[-{Latex[width=2mm]},draw=gray] (roadmap) -- (newcomer);
+\draw[-{Latex[width=2mm]},draw=gray] (roadmap) -- (useormake);
+\draw[-{Latex[width=2mm]},draw=gray] (scrapbook) -- (par);
+\draw[-{Latex[width=2mm]},draw=gray] (scrapbook) -- (wrapper);
+\draw[-{Latex[width=2mm]},draw=gray] ([xshift=2mm,yshift=-.4mm]useormake.south) -- (creatingaguide);
+\draw[-{Latex[width=2mm]},draw=gray] (wrapper) -- (heartbeat);
+\draw[-{Latex[width=2mm]},draw=gray] (wrapper) -- (roadmap);
+\end{tikzpicture}
