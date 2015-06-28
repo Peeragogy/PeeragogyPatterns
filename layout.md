@@ -9,7 +9,6 @@ A_specific_project.tex
 Wrapper.tex
 figures/peeragogy_dashboard_draft1/peeragogy_dashboard_draft1.jpg
 Heartbeat.tex
-Creating_a_guide.tex
 Newcomer.tex
 Pattern_Audit.tex
 Scrapbook.tex
