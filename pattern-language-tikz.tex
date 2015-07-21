@@ -22,10 +22,11 @@
 \draw[-{Latex[width=2mm]},draw=gray] (aspecificproject) -- (carryingcapacity);
 \draw[-{Latex[width=2mm]},draw=gray] (carryingcapacity.337) -- (newcomer);
 \draw[-{Latex[width=2mm]},draw=gray] (carryingcapacity.330) -- (roadmap);
+\draw[-{Latex[width=2mm]},draw=gray] ([xshift=1mm]carryingcapacity.south) -- (scrapbook.140);
 % \draw[-{Latex[width=2mm]},draw=gray] ([xshift=2mm]creatingaguide.160) to[out=-215,in=-67] (carryingcapacity);
 \draw[-{Latex[width=2mm]},draw=gray] (heartbeat) -- (aspecificproject.185);
 \draw[-{Latex[width=2mm]},draw=gray] (heartbeat) -- (carryingcapacity);
-\draw[-{Latex[width=2mm]},draw=gray] (heartbeat) -- (scrapbook);
+\draw[-{Latex[width=2mm]},draw=gray] (heartbeat) -- (scrapbook.155);
 \draw[-{Latex[width=2mm]},draw=gray] (heartbeat) -- (reduce);
 \draw[-{Latex[width=2mm]},draw=gray] (newcomer) -- ([xshift=4mm]reduce.south);
 \draw[-{Latex[width=2mm]},draw=gray] (newcomer) -- (aspecificproject);
@@ -43,6 +44,6 @@
 \draw[-{Latex[width=2mm]},draw=gray] (reduce) -- (carryingcapacity);
 \draw[-{Latex[width=2mm]},draw=gray] (wrapper) -- (heartbeat);
 \draw[-{Latex[width=2mm]},draw=gray] (wrapper) -- (newcomer);
-\draw[-{Latex[width=2mm]},draw=gray] (wrapper) -- (carryingcapacity);
+\draw[-{Latex[width=2mm]},draw=gray] (wrapper) -- ([xshift=2.3mm]carryingcapacity.south);
 \draw[-{Latex[width=2mm]},draw=gray] (wrapper) -- (roadmap);
 \end{tikzpicture}
