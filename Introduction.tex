@@ -20,17 +20,41 @@ A convincing implementation of Christopher Alexander’s idea of patterns as a `
 
 At a more philosophical level, our approach is all about human interaction, and the challenges, fluidity and lack of predictability that comes with it.  Something that works for one person may not work for another or may not even work for the same person in a slightly different situation.  It is easy to say ``just do X'' and even somewhat easy for reasonable people to agree in general terms about what to do.  In our view, other pattern languages often achieve this sort of common sense rationality, and then stop.  In our experience, failure in the prescriptive model begins when people start trying to define things more carefully and make context-specific changes -- when they actually try to put ideas into practice.  One is put in mind of Alfred Korzybski's famous remark: ``the map is not the territory.''  
 
-% Technology has come a long way since Alexander suggested ``you will get the most `power' over the language, and make it your own most effectively, if you write the changes in, at the appropriate places in the book'' \cite[p.~xl]{alexander1977pattern}.
-In any case, we are not talking about abstract patterns, maps, or blueprints in this document -- but about patterns that are contingent on our actions, and patterns that, as we distinguish them, shape who we are.  We believe that design patterns can be used to \emph{constitute and occupy practical or speculative problems as such} \cite[p.~204]{deleuze1994difference}.  Till Sch{\"u}mmer \emph{et al.}~emphasize that pattern authors ``talk about what by definition is tacit'' and further highlight the role of nonverbal communication ``needed to communicate the unspeakable'' \cite[p.~9]{schummer2014beyond}.  Our patterns are a living language because they are hooked to action.
+Our aim in this paper is to outline a new approach to education drawing on the principles of free/open/libre software and ``open culture.''  In order to do this, we attempt to discuss these principles in an actionable, hands-on way.  Mako Hill suggests that one recipe for success in peer production projects is to take a familiar idea -- the canonical example is an \emph{encyclopedia} -- and make it easy for people to participate in building it \cite{almost-wikipedia}.  Here, our inspiring familiar idea is the \emph{university}.  If this is the map (Figure \ref{madison-map}), then the territory is the tacitly-familiar idea of peeragogy.  
 
-% While Christian Kohls insightfully describes patterns as the unique resolution of the dynamical forces acting in a given context \cite{kohls2010structure,kohls2011structure}.
+\begin{wrapfigure}{l}{.52\textwidth}
+\vspace{-.3cm}
+\begin{center}
+\includegraphics[width=.5\textwidth,trim=0 30 10 2, clip=true]{wisconsin-map}
+\end{center}
+\vspace{-.1cm}
+\caption{A prototypical university.  Caption reads: ``Wisconsin State
+  University, Madison, Wis. 1879''.  Inset captions describe the
+  pictured buildings: ``Ladies Hall, South Dormitory, University Hall,
+  Assembly Halls \& Library, North Dormitory, Science Hall, President's
+  Residence, University Farm, and Washburn Observatory.''  Public
+  domain.\label{madison-map}}
+\vspace{-.3cm}
+\end{wrapfigure}
 
-%%% Patterns come to you through mindful awareness ... Charlotte: I think about patterns all the time now, I think about what makes me productive in a team.
-% So, while we speak the same language as other developers of design patterns, our orientation is somewhat different, and our understanding of the word `pattern' is nuanced because we aim to take full account of the lifecycle of patterns.  Our work contributes to a recent ``performative'' turn \cite{schummer2014beyond}, which we believe gets at the heart of what design patterns can do.
-%  
-% In practical terms, we believe the patterns that we introduce here will be useful for students and educators who want their work to have real-world relevance, to activists and policy-makers who want to develop practicable solutions to large-scale problems, and to employees and managers who, like it or not, find themselves working in distributed teams. 
+The model university is not separate from the life of the state or its
+citizenry, but aims to ``assume leadership in the application of
+knowledge for the direct improvement of the life of the people in
+every sphere'' \cite[p. 88]{curti1949university}.  We have framed our
+considerations here in terms of the future of ``education,'' however,
+peeragogy is not just for teachers and students, but for anyone with a
+commitment to learning.  We use the patterns of peeragogy to
+\emph{constitute and occupy practical or speculative problems as such}
+\cite[p.~204]{deleuze1994difference}.
+%
+Our patterns are a living language just insofar as they are hooked to
+action.
 
-The essence of peeragogy is to combine an accessible approach with reflective practice.   We seek to develop a richer understanding of collaborative interaction.  This work is relevant to giving the often vague idea of ``openness'' a more concrete meaning, and will have applications within and beyond peer production.  Our approach to emergent organization is likely to be of interest to theorists in fields like organization studies and, perhaps surprisingly, computer science, where researchers are increasingly making use of social approaches to software design and development (e.g., via the \href{http://www.agilemanifesto.org/}{Manifesto for Agile Software Development}) as well as agent-based models of computation and learning \cite{minsky1967programming,poetry-workshop}.  The next section introduces \patternname{Peeragogy} more explicitly in the form of a design pattern.  Sections \ref{sec:Roadmap}--\ref{sec:Scrapbook} list the main patterns in our catalog.    Figure \ref{fig:connections} illustrates their interconnections.  Section \ref{sec:Distributed_Roadmap} collects our ``What's next'' steps and summarizes the outlook of our project. Section \ref{sec:Conclusion} reviews the contributions made in the paper, positioning this work as a hands-on complement to existing sociological and historical research on peer production (surveyed in \cite{benkler2015peer}).
+% Till Sch{\"u}mmer \emph{et al.}~have emphasized that pattern authors ``talk about what by definition is tacit'' and highlight the role of nonverbal communication ``needed to communicate the unspeakable'' \cite[p.~9]{schummer2014beyond}.
+
+The essence of peeragogy is to combine an accessible approach with reflective practice.   We seek to develop a richer understanding of collaborative interaction.  This work is relevant to giving the often vague idea of ``openness'' a more concrete meaning, and will have applications within and beyond peer production.  Our approach to emergent organization is likely to be of interest to theorists in fields like organization studies and, perhaps surprisingly, computer science, where researchers are increasingly making use of social approaches to software design and development (e.g., via the \href{http://www.agilemanifesto.org/}{Manifesto for Agile Software Development}) as well as agent-based models of computation and learning \cite{minsky1967programming,poetry-workshop}.
+
+The next section introduces \patternname{Peeragogy} more explicitly in the form of a design pattern, and Sections \ref{sec:Roadmap}--\ref{sec:Scrapbook} describe the other patterns in our catalog.  Figure \ref{fig:connections} illustrates their interconnections.  The key forces that apply within the context of these patterns are highlighted in bold face.  Section \ref{sec:Distributed_Roadmap} collects our ``What's next'' steps and summarizes the outlook of our project. Section \ref{sec:Conclusion} reviews the contributions made in the paper, positioning this work as a hands-on complement to existing sociological and historical research on peer production (surveyed in \cite{benkler2015peer}).
 
 \begin{figure}
 \vspace{-.9in}
@@ -43,37 +67,10 @@ The essence of peeragogy is to combine an accessible approach with reflective pr
 \caption{Connections between the patterns of peeragogy.  An arrow points from pattern \textbf{A} to pattern \textbf{B} if the description of pattern \textbf{A} references pattern \textbf{B}. Labels at the borders of the figure correspond to the main sections of the \emph{Peeragogy Handbook}.\label{fig:connections}}
 \end{figure}
 
-
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-  
-  
+% deferring a more detailed elaboration of next steps in the educational arena to future work that will build on this basis.
+% Technology has come a long way since Alexander suggested ``you will get the most `power' over the language, and make it your own most effectively, if you write the changes in, at the appropriate places in the book'' \cite[p.~xl]{alexander1977pattern}.
+% While Christian Kohls insightfully describes patterns as the unique resolution of the dynamical forces acting in a given context \cite{kohls2010structure,kohls2011structure}.
+%%% Patterns come to you through mindful awareness ... Charlotte: I think about patterns all the time now, I think about what makes me productive in a team.
+% So, while we speak the same language as other developers of design patterns, our orientation is somewhat different, and our understanding of the word `pattern' is nuanced because we aim to take full account of the lifecycle of patterns.  Our work contributes to a recent ``performative'' turn \cite{schummer2014beyond}, which we believe gets at the heart of what design patterns can do.
+%  
+% In practical terms, we believe the patterns that we introduce here will be useful for students and educators who want their work to have real-world relevance, to activists and policy-makers who want to develop practicable solutions to large-scale problems, and to employees and managers who, like it or not, find themselves working in distributed teams. 
