@@ -11,19 +11,21 @@
 \section{Introduction}\label{sec:Introduction}
 
 Readers will have encountered \emph{peer production}, at least in applications like Wikipedia, StackExchange, and free/libre/open source software development.   In the Peeragogy project,  we aim to build upon these inspiring examples to help design the future of education.  
-We have found design patterns tremendously useful for organizing our thinking about these matters.  However, there is a key difference between our pattern catalog and previous collections of design patterns that touch on similar domains -- like \emph{Liberating Voices: A Pattern Language for Communication Revolution} \cite{schuler2008liberating} and \emph{Pedagogical Patterns: Advice for Educators} \cite{bergin2012pedagogical}.  Our pattern catalog is our primary project management tool -- our way of ``synthesizing form'' \cite{alexander1964notes}.
+We have found design patterns tremendously useful for organizing our thinking about these matters.  However, there is a key difference between our pattern catalog and previous collections of design patterns that touch on similar domains -- like \emph{Liberating Voices: A Pattern Language for Communication Revolution} \cite{schuler2008liberating} and \emph{Pedagogical Patterns: Advice for Educators} \cite{bergin2012pedagogical}.  What makes this project different is that we use our pattern catalog as our primary project management tool.
+% -- our way of ``synthesizing form'' \cite{alexander1964notes}.
 
-A convincing implementation of Christopher Alexander’s idea of patterns as a ``living language'' \cite[p.~xvii]{alexander1977pattern} was realized with one of the earliest applications of wiki software developed by Ward Cunningham: the Portland Pattern Repository.  What we have developed is a further iteration of this idea.   As our patterns developed, the pattern template we used was revised and revised again, until ultimately we settled on something quite traditional.  At the level of the template, our one innovation is to add a ``What's next'' annotation to each pattern, which anticipates the way the pattern will continue to ``resolve'' in the context of our project. 
+A convincing implementation of Christopher Alexander’s idea of patterns as a ``living language'' \cite[p.~xvii]{alexander1977pattern} was realized with one of the earliest applications of wiki software developed by Ward Cunningham: the Portland Pattern Repository.  What we have developed is a further iteration of this idea.   Our pattern template is quite traditional: our one innovation has been to add a ``What's next'' annotation to each pattern, which anticipates the way the pattern will continue to ``resolve'' in the context of our project. 
 
 % The patterns we introduce here focus on negotiating the execution and implementation of solutions in their practical context.
 %  This often requires compromise, adjustments and even restarts.  
 
-At a more philosophical level, our approach is all about human interaction, and the challenges, fluidity and lack of predictability that comes with it.  Something that works for one person may not work for another or may not even work for the same person in a slightly different situation.  It is easy to say ``just do X'' and even somewhat easy for reasonable people to agree in general terms about what to do.  In our view, other pattern languages often achieve this sort of common sense rationality, and then stop.  In our experience, failure in the prescriptive model begins when people start trying to define things more carefully and make context-specific changes -- when they actually try to put ideas into practice.  One is put in mind of Alfred Korzybski's famous remark: ``the map is not the territory.''  
+At a more philosophical level, our approach is all about human interaction, and the challenges, fluidity and lack of predictability that comes with it.  Something that works for one person may not work for another or may not even work for the same person in a slightly different situation.  Nevertheless, it is hard to argue with a formula like ``do X to get Y.'' In our view, other pattern languages often achieve this sort of common sense rationality, and then stop.  Failure in the prescriptive model only begins when people start trying to define things more carefully and make context-specific changes -- when they actually try to put ideas into practice.  Indeed, the problem is not so much prescription as it is abstraction, in other words, the inevitable distance between ``do as I say'' and ``do with me.''  
+%One is put in mind of Alfred Korzybski's famous remark: ``the map is not the territory.''  
 
-Our aim in this paper is to outline a new approach to education drawing on the principles of free/open/libre software and ``open culture.''  In order to do this, we attempt to discuss these principles in an actionable, hands-on way.  Mako Hill suggests that one recipe for success in peer production projects is to take a familiar idea -- the canonical example is an \emph{encyclopedia} -- and make it easy for people to participate in building it \cite{almost-wikipedia}.  Here, our inspiring familiar idea is the \emph{university}.  If this is the map (Figure \ref{madison-map}), then the territory is the tacitly-familiar idea of peeragogy.  
+Our aim in this paper is to outline a new approach to education drawing on the principles of free/libre/open source software (FLOSS) and open culture.  In order to do this, we attempt to discuss these principles in an actionable, hands-on way.  Mako Hill suggests that one recipe for success in peer production projects is to take a familiar idea -- the canonical example is an encyclopedia -- and make it easy for people to participate in building it \cite{almost-wikipedia}.  Here, our inspiring familiar idea is the university.  If this is the \emph{map} (Figure \ref{madison-map}), then the \emph{territory} is the tacitly-familiar idea of peeragogy.  
 
 \begin{wrapfigure}{l}{.52\textwidth}
-\vspace{-.3cm}
+\vspace{-.2cm}
 \begin{center}
 \includegraphics[width=.5\textwidth,trim=0 30 10 2, clip=true]{wisconsin-map}
 \end{center}
@@ -37,24 +39,25 @@ Our aim in this paper is to outline a new approach to education drawing on the p
 \vspace{-.3cm}
 \end{wrapfigure}
 
-The model university is not separate from the life of the state or its
+Our model university is not separate from the life of the state or its
 citizenry, but aims to ``assume leadership in the application of
 knowledge for the direct improvement of the life of the people in
-every sphere'' \cite[p. 88]{curti1949university}.  We have framed our
-considerations here in terms of the future of ``education,'' however,
-peeragogy is not just for teachers and students, but for anyone with a
+every sphere'' \cite[p. 88]{curti1949university}.  Although we frame
+our considerations here in terms of the future of education, peeragogy
+is not just for teachers and students, but for anyone with a
 commitment to learning.  We use the patterns of peeragogy to
 \emph{constitute and occupy practical or speculative problems as such}
 \cite[p.~204]{deleuze1994difference}.
 %
-Our patterns are a living language just insofar as they are hooked to
-action.
+Our patterns are a living language just insofar as they are linked to
+action.  They remain open ended, and in sharing them we invite
+critical engagement and argument.
 
 % Till Sch{\"u}mmer \emph{et al.}~have emphasized that pattern authors ``talk about what by definition is tacit'' and highlight the role of nonverbal communication ``needed to communicate the unspeakable'' \cite[p.~9]{schummer2014beyond}.
 
 The essence of peeragogy is to combine an accessible approach with reflective practice.   We seek to develop a richer understanding of collaborative interaction.  This work is relevant to giving the often vague idea of ``openness'' a more concrete meaning, and will have applications within and beyond peer production.  Our approach to emergent organization is likely to be of interest to theorists in fields like organization studies and, perhaps surprisingly, computer science, where researchers are increasingly making use of social approaches to software design and development (e.g., via the \href{http://www.agilemanifesto.org/}{Manifesto for Agile Software Development}) as well as agent-based models of computation and learning \cite{minsky1967programming,poetry-workshop}.
 
-The next section introduces \patternname{Peeragogy} more explicitly in the form of a design pattern, and Sections \ref{sec:Roadmap}--\ref{sec:Scrapbook} describe the other patterns in our catalog.  Figure \ref{fig:connections} illustrates their interconnections.  The key forces that apply within the context of these patterns are highlighted in bold face.  Section \ref{sec:Distributed_Roadmap} collects our ``What's next'' steps and summarizes the outlook of our project. Section \ref{sec:Conclusion} reviews the contributions made in the paper, positioning this work as a hands-on complement to existing sociological and historical research on peer production (surveyed in \cite{benkler2015peer}).
+The next section introduces \patternname{Peeragogy} more explicitly in the form of a design pattern.  Sections \ref{sec:Roadmap}--\ref{sec:Scrapbook} present the other patterns in our catalog.  Figure \ref{fig:connections} illustrates their interconnections.  The key forces that apply within the patterns' context are highlighted in bold face.  Each pattern concludes with a short summary, describing the pattern's key consequences as a take-home point.  Section \ref{sec:Distributed_Roadmap} collects our ``What's next'' steps and summarizes the outlook of the Peeragogy project.  Section \ref{sec:Conclusion} reviews the contributions made in the paper, positioning this work as a hands-on complement to existing sociological and historical research on peer production (surveyed in \cite{benkler2015peer}).
 
 \begin{figure}
 \vspace{-.9in}
