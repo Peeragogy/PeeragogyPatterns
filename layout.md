@@ -13,3 +13,5 @@ Newcomer.tex
 Pattern_Audit.tex
 Scrapbook.tex
 Distributed_Roadmap.tex
+Case_Studies.tex
+Conclusion.tex
