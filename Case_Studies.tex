@@ -1,33 +1,33 @@
 \section{Case Studies}\label{sec:Case Studies}
 
+In order to show some examples of these patterns ``in action'' we will
+briefly look at examples from the Wikimedia project.  We then turn to
+a hypothetical case study in design.
+
 \subsection{Wikimedia projects.}
 
-\patternname{Newcomer} There are lots of resources newcomers can use, including
-the ``Teahouse'', and lots of documentation.\footnote{\url{https://en.wikipedia.org/wiki/Wikipedia:Teahouse}}\textsuperscript{,}\footnote{\url{https://en.wikipedia.org/wiki/Help:Editing}}  They may be rewarded for their efforts with a special ``barnstar''.\footnote{\url{https://commons.wikimedia.org/wiki/File:Exceptional_newcomer.jpg}}
-Newcomer ``survival'' is of interest to the Wikimedia foundation.\footnote{\url{https://meta.wikimedia.org/wiki/Research:Newcomer_survival_models}}
+Wiki users are invited to contribute content as well as software, and
+can get involved with governance and other ``meta'' duties.  We would
+claim that this pluralistic approach is an example of
+\patternname{Peeragogy} in action.  These numbers show that the
+approach achieves something important: Wikimedia Foundation runs one
+the 7\textsuperscript{th} most popular website, and has around 230
+employees.  For comparison, the 6\textsuperscript{th} most popular
+website is Amazon, with more than 150K employees, and the
+8\textsuperscript{th} most popular website is run by Tencent Holdings
+Limited, with around 30K employees.
 
-% \footnote{\url{https://m.wikimediafoundation.org/wiki/Staff_and_contractors}}
-% \footnote{\url{https://en.m.wikipedia.org/wiki/Wikipedia:List_of_Wikipedians_by_number_of_edits}}
-
-\patternname{Reduce, reuse, recycle} On the \emph{upstream} side,
-users are encouraged to recycle existing works that are compatible
-with the CC-By-SA license and the mission of the respective sites.  On
-the \emph{downstream} side, DBPedia is huge in semantic web.  There
-have been some other interesting experimental projects e.g. for
-building learning paths through Wikipedia content, or showing heatmaps
-of editing activity -- these aren't made that accessible to day-to-day
-users.
-
-\patternname{Wrapper} There are lots of blogs and feeds that can be
-used to stay informed.  However, one aspect of this that could be
-improved is the issue, mentioned above, with getting access to the
-latest experiments.  Wikimedia as a community seems to be good at
-building resources, but not always giving exposure to contributors.
-
-\patternname{Roadmap} The \emph{Help} tab occupies a piece of prime
-real estate (it is on every Wikipedia page).  It may be useful for
-newcomers, but it could also provides a sort of roadmap for the user's
-engagement.\footnote{\url{https://en.wikipedia.org/wiki/Help:Contents}}
+There are lots of resources a Wikipedia \patternnameplural{Newcomer}
+can use, including the ``Teahouse'', and lots of
+documentation.\footnote{\url{https://en.wikipedia.org/wiki/Wikipedia:Teahouse}}\textsuperscript{,}\footnote{\url{https://en.wikipedia.org/wiki/Help:Editing}}
+They may be rewarded for their efforts with a special
+``barnstar''.\footnote{\url{https://commons.wikimedia.org/wiki/File:Exceptional_newcomer.jpg}}
+Newcomer ``survival'' is of interest to the Wikimedia
+foundation.\footnote{\url{https://meta.wikimedia.org/wiki/Research:Newcomer_survival_models}}
+%
+The \emph{Help} tab (on every Wikipedia page) could provides a sort of
+\patternname{Roadmap} for the user's
+engagement:\footnote{\url{https://en.wikipedia.org/wiki/Help:Contents}}
 
 \begin{quotation}
 \noindent 
@@ -38,38 +38,62 @@ I want to create a new article or upload media;
 I have a factual question.
 (etc.)
 \end{quotation}
+%
+%% However, many people will bypass help functions.A recent post from
+%% Jonathan Morgan of WMF talks about \emph{outlines} at the article
+%% level, which would give some insight into an article-level
+%% ``roadmap.''
+%
+%% \begin{quotation}
+%% \noindent Cross-posting this request to the {\tt wiki-research-l} mailing
+%% list. Anyone have data on frequently used section titles in articles
+%% (any language), or know of datasets/publications that examined this?
+%% \end{quotation}
+%
+%% One may have to turn to the research literature to give an idea of
+%% current global coverage of Wikipedia \cite{holloway2007analyzing}.
+%
+Although articles and other items are filled in opportunistically,
+plans for the future exist at the level of individual projects and for
+the Wikimedia Foundation as a whole.  For example, we could reference
+the Wikimedia Foundation's previous ``five year plan'' as a sort of
+\patternname{Scrapbook}.
 
-However, many people will bypass help functions.A recent post from
-Jonathan Morgan of WMF talks about \emph{outlines} at the article
-level, which would give some insight into an article-level
-``roadmap.''
 
-\begin{quotation}
-\noindent Cross-posting this request to the {\tt wiki-research-l} mailing
-list. Anyone have data on frequently used section titles in articles
-(any language), or know of datasets/publications that examined this?
-\end{quotation}
+% \footnote{\url{https://m.wikimediafoundation.org/wiki/Staff_and_contractors}}
+% \footnote{\url{https://en.m.wikipedia.org/wiki/Wikipedia:List_of_Wikipedians_by_number_of_edits}}
 
-One may have to turn to the research literature to give an idea of
-current global coverage of Wikipedia \cite{holloway2007analyzing}.
-Plans exist at the level of individual projects (below) and for the
-Wikimedia Foundation as a whole.
+One of the best ways to connect with other users on Wikipedia is to
+join \patternname{A specific project} (known as a
+``WikiProject'').\footnote{\url{https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Council/Directory}}\textsuperscript{,}\footnote{\url{https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Council/Guide}}
+Individual projects typically maintain their own lists of objectives,
+e.g., articles in progress.
 
-\patternname{A specific project} One of the best ways to connect with
-other users is to join a specific
-WikiProject.\footnote{\url{https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Council/Directory}}\textsuperscript{,}\footnote{\url{https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Council/Guide}}
-Individual projects often maintain their own lists of articles to add.
+Users are encouraged to recycle existing works that are compatible
+with the CC-By-SA license and the mission of the respective sites (and
+some WikiProjects exist purely to help re-purpose existing works in
+this way).  On the downstream side, DBPedia is huge in semantic web,
+built from the data in Wikipedia's ``infoboxes''.  Researchers have
+been able to \patternname{Reduce, reuse, recycle} Wikipedia material
+in other ways, e.g.~developing tools for building learning paths
+through Wikipedia content, or showing heatmaps of editing activity.
+However, these research interventions do not always result in
+something accessible to day-to-day users.  Dissemination is something
+that can always be improved.  There are currently lots of blogs and
+feeds that can be used to stay informed, comprising a
+\patternname{Wrapper} function.
+%%   Wikimedia as a community
+%% seems to be good at building resources, but not always giving exposure
+%% to contributors.
+
  
-\patternname{Heartbeat} The yearly in-person gathering, Wikimania,
-provides the clearest example of heartbeat for the Wikimedia movement.
-This is one way in which Wikipedia functions as a social network. 
-Another relevant feature is the twice-yearly call for for proposals for
-individual engagement grants.\footnote{\url{https://meta.wikimedia.org/wiki/Grants:IEG}}
+The yearly in-person gathering, Wikimania, provides the clearest
+example of a \patternname{Heartbeat} for the Wikimedia movement.  This
+is one way in which Wikipedia functions as a social network.  Also of
+note is the twice-yearly call for for proposals for individual
+engagement
+grants.\footnote{\url{https://meta.wikimedia.org/wiki/Grants:IEG}}
 
-\patternname{Scrapbook} - we could reference the previous ``five year
-plan'' as a sort of scrapbook.
-
-\patternname{Carrying capacity} 
 %``we are often blinded
 %by our ... preferences'' -- In everything that's written here, there
 %are certain phrases that I especially respond to.
@@ -99,19 +123,14 @@ Wikipedia may be neutral, but we're not neutral.
 Wikipedia is important because it is relevant to things that matter to
 us.  It helps to inform us regarding our necessary purposes -- and we
 are invited to ``speak up'' by making edits to pages that matter to
-us.
+us.  In theory, this builds Wikipedia's \patternname{Carrying
+  capacity}, although editor engagement is a continual concern (and
+has been seen to be falling in recent years).
 %
 %% re: number 4:ethics. yes. ethics means civil solutions. As in
 %% peaceably, agreeably as humanly possible, not violently.
 
-\patternname{Peeragogy} - Users are invited to contribute content as
-well as software, and can get involved with governance and other
-``meta'' duties.  The Wikimedia Foundation runs one the
-7\textsuperscript{th} most popular website, and has around 230
-employees.  For comparison, the 6\textsuperscript{th} most popular
-website is Amazon, with more than 150K employees, and the
-8\textsuperscript{th} most popular website is run by Tencent Holdings
-Limited, with around 30K employees.
+
 
 % Ladies Hall, South Dormitory, University Hall, Assembly Halls \& Library, North Dormitory, Science Hall, President's Residence, University Farm, and Washburn Observatory.
 \subsection{The future university.}
