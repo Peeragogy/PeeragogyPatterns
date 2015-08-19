@@ -22,7 +22,10 @@ A convincing implementation of Christopher Alexander’s idea of patterns as a `
 At a more philosophical level, our approach is all about human interaction, and the challenges, fluidity and lack of predictability that comes with it.  Something that works for one person may not work for another or may not even work for the same person in a slightly different situation.  Nevertheless, it is hard to argue with a formula like ``do X to get Y.'' In our view, other pattern languages often achieve this sort of common sense rationality, and then stop.  Failure in the prescriptive model only begins when people start trying to define things more carefully and make context-specific changes -- when they actually try to put ideas into practice.  The problem lies in the inevitable distance between \emph{do as I say}, \emph{do as I do}, and \emph{do with me} \cite[p.~26]{deleuze1994difference}.
 %One is put in mind of Alfred Korzybski's famous remark: ``the map is not the territory.''  
 
-Our aim in this paper is to outline a new approach to education drawing on the principles of free/libre/open source software (FLOSS) and open culture.  In order to do this, we attempt to treat these principles in an actionable, hands-on way.  Mako Hill suggests that one recipe for success in peer production projects is to take a familiar idea -- the canonical example is an encyclopedia -- and make it easy for people to participate in building it \cite{almost-wikipedia}.  Here, our inspiring familiar idea is the university.  This is the \emph{map} (Figure \ref{madison-map}), while the \emph{territory} is the tacitly-familiar idea of peeragogy.  
+Our aim in this paper is to outline a new approach to education drawing on the principles of free/libre/open source software (FLOSS) and open culture.  In order to do this, we attempt to treat these principles in an actionable, hands-on way.  Mako Hill suggests that one recipe for success in peer production projects is to take a familiar idea -- the canonical example is an encyclopedia -- and make it easy for people to participate in building it \cite{almost-wikipedia}.  Here, the inspiring familiar idea is the university.  This is the map (Figure \ref{madison-map}), while the territory is the tacitly-familiar idea of peeragogy.
+
+Indeed, the strong version of our claim is that peeragogy, or something very much like it, is needed in applications of any map, blueprint, or design that seeks to involve people as people.  In some idealized sense, \emph{control} is all that's required to move from a well-thought-out design to successful execution.  And yet, learning, and a concomitant \emph{second order cybernetics}, are required for the creation of designs in the first place \cite{von2003cybernetics}.  Technology has come a long way since Alexander suggested ``you will get the most `power' over the language, and make it your own most effectively, if you write the changes in, at the appropriate places in the book'' \cite[p.~xl]{alexander1977pattern}.  What we are saying here continues and expands upon that line of thought.  Can we inscribe our patterns and their changing form not just in the margins of a book, or even on a shared wiki, but within consensus reality?
+%This claim is more esoteric in technical domains
 
 \begin{wrapfigure}{l}{.52\textwidth}
 \vspace{-.2cm}
@@ -39,25 +42,28 @@ Our aim in this paper is to outline a new approach to education drawing on the p
 \vspace{-.3cm}
 \end{wrapfigure}
 
-Our model university is not separate from the life of the state or its
+The model university is not separate from the life of the state or its
 citizenry, but aims to ``assume leadership in the application of
 knowledge for the direct improvement of the life of the people in
-every sphere'' \cite[p. 88]{curti1949university}.  Although we frame
-our considerations here in terms of the future of education, peeragogy
+every sphere'' \cite[p.~88]{curti1949university}. Research that \emph{adds
+to the store of knowledge} is another fundamental
+obligation \cite[p.~550]{curti1949university}.  Although 
+our considerations are framed around the future of education, peeragogy
 is not just for teachers and students, but for anyone with a
 commitment to learning.  We use the patterns of peeragogy to
 \emph{constitute and occupy practical or speculative problems as such}
 \cite[p.~204]{deleuze1994difference}.
 %
 Our patterns are a living language just insofar as they are linked to
-action.  They remain open ended, and in sharing them we invite
-critical engagement and argument.
+action.
 
 % Till Sch{\"u}mmer \emph{et al.}~have emphasized that pattern authors ``talk about what by definition is tacit'' and highlight the role of nonverbal communication ``needed to communicate the unspeakable'' \cite[p.~9]{schummer2014beyond}.
 
-The essence of peeragogy is to combine an accessible approach with reflective practice.   We seek to develop a richer understanding of collaborative interaction.  This work is relevant to giving the often vague idea of ``openness'' a more concrete meaning, and will have applications within and beyond peer production.  Our approach to emergent organization is likely to be of interest to theorists in fields like organization studies and, perhaps surprisingly, computer science, where researchers are increasingly making use of social approaches to software design and development (e.g., via the \href{http://www.agilemanifesto.org/}{Manifesto for Agile Software Development}) as well as agent-based models of computation and learning \cite{minsky1967programming,poetry-workshop}.
+Peeragogy combines an accessible approach with reflective practice.   We seek to develop a richer understanding of collaborative interaction.  This work is relevant to giving the often vague idea of ``openness'' a more concrete meaning, and will have applications within and beyond peer production.  Our approach to emergent organization is likely to be of interest to theorists in fields like organization studies and, perhaps surprisingly, computer science, where researchers are increasingly making use of social approaches to software design and development (e.g., via the \href{http://www.agilemanifesto.org/}{Manifesto for Agile Software Development}) as well as agent-based models of computation and learning \cite{minsky1967programming,poetry-workshop}.  The design pattern community is deeply familiar with practices that we think of as peeragogical, notably shepherding and writers workshops \cite{gabriel2002writer}.  We hope to rally the community around these strengths, and broaden its influence.
 
-The next section introduces \patternname{Peeragogy} more explicitly in the form of a design pattern.  Sections \ref{sec:Roadmap}--\ref{sec:Scrapbook} present the other patterns in our catalog.  Figure \ref{fig:connections} illustrates their interconnections.  The key forces that apply within the patterns' context are highlighted in bold face.  Each pattern concludes with a short summary and a ``What's next'' annotation.  Section \ref{sec:Distributed_Roadmap} collects these ``next steps'' and summarizes the outlook of the Peeragogy project.  Section \ref{sec:Case Studies} includes two short case studies that show how the patterns can be applied -- first, in an analysis of current Wikimedia projects, and second in the design for a hypothetical future university.  Section \ref{sec:Conclusion} reviews the contributions made in the paper, positioning this work as a hands-on complement to existing sociological and historical research about peer production (surveyed in \cite{benkler2015peer}).
+The next section introduces \patternname{Peeragogy} more explicitly in the form of a design pattern.  Sections \ref{sec:Roadmap}--\ref{sec:Scrapbook} present the other patterns in our catalog.  Figure \ref{fig:connections} illustrates their interconnections.  The key forces that apply within the patterns' context are highlighted in bold face.  Each pattern includes two examples. The first example shows howing how the pattern is exhibited in current Wikimedia projects.  We have selected Wikimedia as a source of examples because we are relatively familiar with it, and because the data is readily available to readers.  The second example shows how the given pattern could be applied in the design of future university.  Whereas existing projects like Wikimedia's Wikiversity and the Peer-2-Peer University (P2PU) have created ``a model for lifelong learning alongside traditional formal higher education,''\footnote{\url{https://www.p2pu.org/en/}} they stop well short of offering accredited degrees.  What would an accredited free/libre/open university offering general education look like?  How would it compare or contrast with the typical or stereotypical image of a university from Figure \ref{madison-map}?
+
+Each pattern concludes with a ``What's next'' annotation, and Section \ref{sec:Distributed_Roadmap} collects these next steps and summarizes the outlook of the Peeragogy project.  Section \ref{sec:Conclusion} reviews the contributions made in the paper, positioning this work as a hands-on complement to existing sociological and historical research about peer production (surveyed in \cite{benkler2015peer}).
 
 \begin{figure}
 \vspace{-.9in}
