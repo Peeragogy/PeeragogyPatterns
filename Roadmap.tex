@@ -4,8 +4,29 @@
 
 % DK: How is this different from a Backlog? Who “owns” the roadmap? How are changes made to it? How precise is it? Does it have a time dimension to it? You refer to deadlines later on. Does the roadmap include them? (What do deadlines really mean in a project like this anyhow?) Priority?
 
+\subsubsection*{Motivation} This pattern describes the main ``design object'' that is of interest in peeragogy: the group's ongoing plan-in-progress to address their goals.  It is the central pattern in our pattern language. 
+
+\begin{center}
+\begin{tabular}{l}
+\textbf{$\leftarrow$\patternname{Reduce, reuse, recycle}: The design will progress by making sense of existing resources.}\\
+\textbf{$\leftarrow$\patternname{Carrying capacity}: As difficulties are encountered the plan should be revised.}\\
+\textbf{$\leftarrow$\patternname{A specific project}: The project may cover many connected sub-projects.}\\
+\textbf{$\leftarrow$\patternname{Wrapper}: Someone in the project needs to make sure the plan accurately reflects reality.}\\
+\textbf{$\leftarrow$\patternname{Newcomer}: If new participants have trouble getting involved, the plan should be revised.}\\
+\end{tabular}
+\end{center}
+
 \subsubsection*{Context} \patternname{Peeragogy} has both distributed and centralized aspects. The different discussants or contributors who collaborate on a project have different points of view and heterogeneous priorities, but they come together in conversations and joint activities.
-\textbf{Different people will have different goals and interests in mind; some may be quite specific, and some rather vague.  Upon further scrutiny, some of these goals will be seen to be well-aligned, others less so.}
+
+\subsubsection*{Forces}
+\raisebox{-1\baselineskip}
+{{\centering
+\begin{tabular}{l}
+\textbf{Variety: people have different goals and interests in mind.}\\
+\textbf{Clarity: some may be quite specific, and some rather vague.}\\
+\textbf{Coherence: some of these goals will be well-aligned, others less so.}
+\end{tabular}
+}}
 
 \subsubsection*{Problem} In order to collaborate, people need a way to share current, though incomplete, understanding of the space they are working in, and to nurture relationships with one another and the other elements of this space.  Without a sense of our individual goals or how they fit together in the context of addressing outstanding problems, it is difficult for people to help out, or to assess the 
 project's progress.  At the outset, there may not even be a project or a vision for a project, but a only loose collection of motivations and sentiments.  Once the project is running, people are likely to pull in different directions.   
@@ -32,9 +53,11 @@ Using the pattern catalog as an
 organizational tool gives us a robust mechanism for
 building and maintaining a ``distributed'', and ultimately
 ``emergent'' roadmap -- whose components are rooted in real problems
-and justifiable solutions, with a concrete resolution and
-followthrough.  When these components are put together, we get a
-reasonably coherent and actionable idea of where the project is going.
+and justifiable solutions in all their \textbf{variety}, together with a concrete resolution and
+followthrough.  As these components are added by project participants or someone working on 
+their behalf, the process of meshing different issues with one another requires thought and
+discussion, and this encourages \textbf{clarity}.  As these components are put together
+they achieve a sufficient degree of \textbf{coherence} to be actionable.
 %
 The roadmap can give \patternnameplural{Newcomer} a reasonable idea of what it would mean to participate in the project, and can help them  decide whether, where, and how to get involved.
 
