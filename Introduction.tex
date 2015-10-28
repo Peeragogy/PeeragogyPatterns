@@ -67,19 +67,37 @@ Our emergent approach to collaboration and knowledge-building is likely to be of
 %
 The design pattern community in particular is very familiar with practices that we think of as peeragogical, notably shepherding and writers workshops \cite{harrison1999language,coplien1997pattern}.  We hope to help design pattern authors and researchers expand on these strengths.
 
-\subsection{Pattern Language Template}
+\subsection*{Plan of the work}
+
+\begin{wraptable}{r}{.52\textwidth}
+\vspace{-.10cm}
+\begin{tabular}{|p{.5\textwidth}|}
+\hline
+\emph{Motivation} for using this pattern.\\ \hline
+\emph{Context} of application.\\ \hline
+\emph{Forces} that operate within the context of application. \\ \hline
+\emph{Problem} the pattern addresses.\\ \hline
+\emph{Solution} to the problem.\\ \hline
+\emph{Rationale} for this solution.\\ \hline
+\emph{Resolution} of the forces.\\ \hline
+\emph{Example 1}: How the pattern manifests in current Wikimedia projects.\\ \hline
+\emph{Example 2}: How the pattern could inform the design of a future university.\\ \hline
+``\emph{What's Next}'': Our collective intention in the Peeragogy project\\ \hline
+\end{tabular}
+\vspace{-.1cm}
+\caption{Pattern template.\label{tab:pattern-template}}
+\vspace{-.6cm}
+\end{wraptable}
 
 This section is intended to give the reader an idea of how the paper is organized. Section \ref{sec:Peeragogy} explains the concept of \patternname{Peeragogy} explicitly in the form of a design pattern. Sections \ref{sec:Roadmap}--\ref{sec:Scrapbook} present the other patterns in our pattern language. Figure \ref{fig:connections} illustrates their interconnections.
 
-Each pattern begins with a section on its \emph{Motivation}. This includes both a summary of its intended use, and annotated ``backlinks'' crossreferencing the other patterns that connect to the pattern at hand. These patterns help to illustrate the supporting purpose that the current pattern serves within the language. The \emph{Context} of application is then described.  The key \emph{Forces} that operate within the context of application are given names and listed in bold. We then describe the \emph{Problem}, that the pattern addresses, its \emph{Solution}, and the reasoning, or \emph{Rationale} for this solution, followed by a summary of the \emph{Resolution}, or balance, of forces in the context of the pattern application.
-
-Each pattern also includes two examples: \emph{Example 1} shows how the pattern is exhibited in current Wikimedia projects.  We have selected Wikimedia as a source of examples because we are relatively familiar with it, and because the relevant data is available to readers.  \emph{Example 2} shows how the given pattern could be applied in the design of a future university.  Whereas existing projects like Wikimedia's Wikiversity\footnote{\url{https://www.wikiversity.org/}} and the Peer-2-Peer University (P2PU) have created ``a model for lifelong learning alongside traditional formal higher education,''\footnote{\url{https://www.p2pu.org/en/}} they stop well short of offering accredited degrees.  What would an accredited free/libre/open university offering general education look like?  How would it compare or contrast with the typical or stereotypical image of a university from Figure \ref{madison-map}?
-%OSS: who cares? start w/example?
+Table \ref{tab:pattern-template} shows the pattern template that we use throughout the paper.  Each pattern includes two illustrative examples.  The first is descriptive, and looks at how the pattern applise in current Wikimedia projects.  The second is prospecttive and shows show how the pattern could be applied in the design of a future university.  Whereas existing projects like Wikimedia's Wikiversity\footnote{\url{https://www.wikiversity.org/}} and the Peer-2-Peer University (P2PU) have created ``a model for lifelong learning alongside traditional formal higher education,''\footnote{\url{https://www.p2pu.org/en/}} they stop well short of offering accredited degrees.  What would an accredited free/libre/open university offering general education look like?  How would it compare or contrast with the typical or stereotypical image of a university from Figure \ref{madison-map}?
 Each pattern concludes with a boxed ``\emph{What's Next}'' annotation that is specific to our collective intention in the Peeragogy project.
 
 Section \ref{sec:Distributed_Roadmap} collects these next steps and summarizes the outlook of the Peeragogy project.  Section \ref{sec:Conclusion} reviews the contributions made in the paper, positioning this work as a hands-on complement to existing sociological and historical research about peer production (surveyed in \cite{benkler2015peer}).
 
-\subsection{A short motivating example}
+%OSS: who cares? start w/example?
+\subsection*{A short motivating example}
 When one relative \patternname{Newcomer} was still in the onboarding process in Peeragogy Project, she hit a wall in understanding the ``patterns'' section in the Peeragogy Handbook v1. A more seasoned peer invited her to a series of separate sessions to flesh out the patterns and make them more accessible to newcomers. During those sessions, the impact and meaning of patterns captured her imagination. She continued on to become the champion for pattern language and application in the Project, helped revise the pattern language section for v3, and attended PLoP 2015. While it can easily get overwhelming, this newcomer found \patternname{A specific project} to start and scaffolded her knowledge and contributions from that base.
 
 \begin{figure}
@@ -90,8 +108,260 @@ When one relative \patternname{Newcomer} was still in the onboarding process in 
 \par
 }
 \vspace{-.9in}
-\caption{Connections between the patterns of peeragogy.  An arrow points from pattern \textbf{A} to pattern \textbf{B} if the description of pattern \textbf{A} references pattern \textbf{B}. Labels at the borders of the figure correspond to the main sections of the \emph{Peeragogy Handbook}.\label{fig:connections}}
+\caption{Connections between the patterns of peeragogy.  An arrow points from pattern \textbf{A} to pattern \textbf{B} if the text of the description of pattern \textbf{A} references pattern \textbf{B}.  Labels at the borders of the figure correspond to the main sections of the \emph{Peeragogy Handbook}.\label{fig:connections}}
 \end{figure}
+
+\begin{table}
+{\footnotesize
+\begin{tabular}{|p{\textwidth}|}
+\hline
+\rowcolor{Gray!30} \multicolumn{1}{|l|}{\color{Black} \ref{sec:Peeragogy}. \patternname{Peeragogy}: \textbf{How can we solve problems together?}}\\
+\hline
+\vspace{.01em}
+\begin{minipage}{\textwidth}
+\begin{description}
+\item[$\leftarrow$\patternname{Roadmap}] We need to figure out how to get from ``here'' to ``there''.
+\item[$\leftarrow$\patternname{Carrying capacity}] Each contributor has bounded time and other resources.
+\end{description}
+\end{minipage}
+\vspace{.25em}\\
+\hline 
+%%%%%%%%%%%%%%%%%%%%
+\rowcolor{Gray!30} \multicolumn{1}{|l|}{\color{Black} \ref{sec:Roadmap}. \patternname{Roadmap}: \textbf{How can we keep track of what everyone is doing?}}\\
+\hline
+\vspace{.01em}
+\begin{minipage}{\textwidth}
+\begin{description}
+\item[$\leftarrow$\patternname{Reduce, reuse, recycle}] A plan develops by making sense of existing resources.
+\item[$\leftarrow$\patternname{Carrying capacity}] As difficulties are encountered the plan should be revised.
+\item[$\leftarrow$\patternname{A specific project}] The project may cover many connected sub-projects.
+\item[$\leftarrow$\patternname{Wrapper}] Someone in the project needs to make sure the plan reflects reality.
+\item[$\leftarrow$\patternname{Newcomer}] If new participants have trouble getting involved, the plan should be revised.
+\end{description}
+\end{minipage}
+\vspace{.25em}\\
+\hline
+%%%%%%%%%%%%%%%%%%%%
+\rowcolor{Gray!30} \multicolumn{1}{|l|}{\color{Black} \ref{sec:Reduce, reuse, recycle}. \patternname{Reduce, reuse, recycle}: \textbf{How can we avoid undue isolation?}}\\
+\hline
+\vspace{.01em}
+\begin{minipage}{\textwidth}
+\begin{description}
+\item[$\leftarrow$\patternname{Heartbeat}] As we notice new potential sub- or spin-off projects, we can give them more energy.
+\item[$\leftarrow$\patternname{Newcomer}] Each potential contributor brings a somewhat new approach.
+\item[$\leftarrow$\patternname{Scrapbook}] We can keep track of great ideas coming from many different sources.
+\end{description}
+\end{minipage}
+\vspace{.25em}\\
+\hline
+%%%%%%%%%%%%%%%%%%%%
+\rowcolor{Gray!30} \multicolumn{1}{|l|}{\color{Black} \ref{sec:Carrying capacity}. \patternname{Carrying capacity}: \textbf{How can we avoid becoming overwhelmed?}}\\
+\hline
+\vspace{.01em}
+\begin{minipage}{\textwidth}
+\begin{description}
+%%% Revise here
+\item[$\leftarrow$\patternname{Reduce, reuse, recycle}] All available perspectives are useful for the project.
+\item[$\leftarrow$\patternname{A specific project}] We may need help to create or activate a plan.
+\item[$\leftarrow$\patternname{Wrapper}] Share skills and be transparent about limitations and bottlenecks.
+\item[$\leftarrow$\patternname{Heartbeat}] Project activites should give us rewards, not drain our energy.
+\end{description}
+\end{minipage}
+\vspace{.25em}\\
+\hline
+%%%%%%%%%%%%%%%%%%%%
+\rowcolor{Gray!30} \multicolumn{1}{|l|}{\color{Black} \ref{sec:A specific project}. \patternname{A specific project}: \textbf{How can avoid becoming perplexed?}}\\
+\hline
+\vspace{.01em}
+\begin{minipage}{\textwidth}
+\begin{description}
+\item[$\leftarrow$\patternname{Peeragogy}] We can collaborate on (the intersections of) specific projects.
+\item[$\leftarrow$\patternname{Roadmap}] In some cases we can lay out the potential tasks far in advance.
+\item[$\leftarrow$\patternname{Heartbeat}] We may alternate open discussion with focused work sessions.
+\item[$\leftarrow$\patternname{Newcomer}]As we find our way from motivation to action, we add concreteness.
+\end{description}
+\end{minipage}
+\vspace{.25em}\\
+\hline
+%%%%%%%%%%%%%%%%%%%%
+\rowcolor{Gray!30} \multicolumn{1}{|l|}{\color{Black} \ref{sec:Wrapper}. \patternname{Wrapper}: \textbf{How can people stay in touch with the project?}}\\
+\hline
+\vspace{.01em}
+\begin{minipage}{\textwidth}
+\begin{description}
+\item[$\leftarrow$\patternname{Roadmap}]If project participants are not all contributing, someone may take charge.
+\item[$\leftarrow$\patternname{Scrapbook}] One part of this responsible role is to gather outstanding concerns.
+\end{description}
+\end{minipage}
+\vspace{.25em}\\
+\hline
+%%%%%%%%%%%%%%%%%%%%
+\rowcolor{Gray!30} \multicolumn{1}{|l|}{\color{Black} \ref{sec:Heartbeat}. \patternname{Heartbeat}: \textbf{How can we make the project ``real'' for participants?}}\\
+\hline
+\vspace{.01em}
+\begin{minipage}{\textwidth}
+\begin{description}
+\item[$\leftarrow$\patternname{Roadmap}] The simplest plan may just be to meet together from time to time.
+\item[$\leftarrow$\patternname{Wrapper}] It can be useful to set things up so that people can follow different rhythms.
+\end{description}
+\end{minipage}
+\vspace{.25em}\\
+\hline
+%%%%%%%%%%%%%%%%%%%%
+\rowcolor{Gray!30} \multicolumn{1}{|l|}{\color{Black} \ref{sec:Newcomer}. \patternname{Newcomer}: \textbf{How can we make the project accessible to new people?}}\\
+\hline
+\vspace{.01em}
+\begin{minipage}{\textwidth}
+\begin{description}
+\item[$\leftarrow$\patternname{Roadmap}] Transparency can show outsiders what it would be like to get involved.
+\item[$\leftarrow$\patternname{Carrying capacity}] Boosting the project's capacity may require training in new participants.
+\item[$\leftarrow$\patternname{Wrapper}] Ideally we would actively welcome all contributions with love.
+\end{description}
+\end{minipage}
+\vspace{.25em}\\
+\hline
+%%%%%%%%%%%%%%%%%%%%
+\rowcolor{Gray!30} \multicolumn{1}{|l|}{\color{Black} \ref{sec:Scrapbook}. \patternname{Scrapbook}: \textbf{How can we maintain focus as time goes by?}}\\
+\hline
+\vspace{.01em}
+\begin{minipage}{\textwidth}
+\begin{description}
+\item[$\leftarrow$\patternname{Carrying capacity}] It is useful to record obstacles and outstanding challenges.
+\item[$\leftarrow$\patternname{A specific project}] We want to stay connected to concrete action, not just theory.
+\item[$\leftarrow$\patternname{Heartbeat}] A project that is no longer rewarding may be put on the back burner.
+\end{description}
+\end{minipage}
+\vspace{.25em}\\
+\hline
+
+\end{tabular}
+}
+\caption{Backwards links specify the ``larger'' context for each of our patterns.  This helps to explain the core problem that each pattern in our pattern language addresses. This table records each instance of \textbf{B}$\leftarrow$\textbf{A} where pattern \textbf{A} refers to pattern \textbf{B}.  }
+\end{table}
+
+\begin{table}
+{\footnotesize
+\begin{tabular}{|p{\textwidth}|}
+\hline
+\rowcolor{Gray!30} \multicolumn{1}{|l|}{\color{Black} \ref{sec:Peeragogy}. \patternname{Peeragogy}: \textbf{Get really concrete about what the problems are.}}\\
+\hline
+\vspace{.01em}
+\begin{minipage}{\textwidth}
+\begin{description}
+\item[$\rightarrow$\patternname{A specific project}] The way to make progress is to get specific.
+\end{description}
+\end{minipage}
+\vspace{-.05em}\\
+\hline 
+%%%%%%%%%%%%%%%%%%%%
+\rowcolor{Gray!30} \multicolumn{1}{|l|}{\color{Black} \ref{sec:Roadmap}. \patternname{Roadmap}: \textbf{Build a plan that we keep updating as we go along.}}\\
+\hline
+\vspace{.01em}
+\begin{minipage}{\textwidth}
+\begin{description}
+\item[$\rightarrow$\patternname{A specific project}] The project shouldn't solve all problems.
+\item[$\rightarrow$\patternname{Heartbeat}] People will meet in some rhythm.
+\item[$\rightarrow$\patternname{Wrapper}] Someone should help those who are less involved keep apprised of progress.
+\item[$\rightarrow$\patternname{Newcomer}] A good plan can help new people get involved.
+\end{description}
+\end{minipage}
+\vspace{.25em}\\
+\hline
+%%%%%%%%%%%%%%%%%%%%
+\rowcolor{Gray!30} \multicolumn{1}{|l|}{\color{Black} \ref{sec:Reduce, reuse, recycle}. \patternname{Reduce, reuse, recycle}: \textbf{Use what's there and share what we make.}}\\
+\hline
+\vspace{.01em}
+\begin{minipage}{\textwidth}
+\begin{description}
+\item[$\rightarrow$\patternname{Roadmap}] Develop a plan to make sense of existing resources.
+\item[$\rightarrow$\patternname{Carrying capacity}] Existing stresses are one resource that we can use.
+\end{description}
+\end{minipage}
+\vspace{.25em}\\
+\hline
+%%%%%%%%%%%%%%%%%%%%
+\rowcolor{Gray!30} \multicolumn{1}{|l|}{\color{Black} \ref{sec:Carrying capacity}. \patternname{Carrying capacity}: \textbf{Clearly express when we're frustrated.}}\\
+\hline
+\vspace{.01em}
+\begin{minipage}{\textwidth}
+\begin{description}
+%%% Revise here
+\item[$\rightarrow$\patternname{Roadmap}] When problems and difficulties are made explicit they can eventually be addressed.
+\item[$\rightarrow$\patternname{Newcomer}] If there is too much work to do, finding people to help may be helpful.
+\end{description}
+\end{minipage}
+\vspace{.25em}\\
+\hline
+%%%%%%%%%%%%%%%%%%%%
+\rowcolor{Gray!30} \multicolumn{1}{|l|}{\color{Black} \ref{sec:A specific project}. \patternname{A specific project}: \textbf{Focus on concrete, doable tasks.}}\\
+\hline
+\vspace{.01em}
+\begin{minipage}{\textwidth}
+\begin{description}
+\item[$\rightarrow$\patternname{Roadmap}] Make your project even more specific by creating a concrete plan.
+\item[$\rightarrow$\patternname{Carrying capacity}] Make the scope of the project match your available energy.
+\item[$\rightarrow$\patternname{Scrapbook}] Make note of anything you haven't been able to solve and move on.
+\end{description}
+\end{minipage}
+\vspace{.25em}\\
+\hline
+%%%%%%%%%%%%%%%%%%%%
+\rowcolor{Gray!30} \multicolumn{1}{|l|}{\color{Black} \ref{sec:Wrapper}. \patternname{Wrapper}: \textbf{Maintain a coherent public surface.}}\\
+\hline
+\vspace{.01em}
+\begin{minipage}{\textwidth}
+\begin{description}
+\item[$\rightarrow$\patternname{Roadmap}] Part of your job is to draw out goals and methods that people are using.
+\item[$\rightarrow$\patternname{Carrying capacity}] Make note of difficulties that the group encounters.
+\item[$\rightarrow$\patternname{Newcomer}] Make the project accessible to newcomers.
+\item[$\rightarrow$\patternname{Heartbeat}] Make sure that meetings happen and that reports on those meetings go to the right people.
+\end{description}
+\end{minipage}
+\vspace{.25em}\\
+\hline
+%%%%%%%%%%%%%%%%%%%%
+\rowcolor{Gray!30} \multicolumn{1}{|l|}{\color{Black} \ref{sec:Heartbeat}. \patternname{Heartbeat}: \textbf{Keep up a regular, sustaining rhythm.}}\\
+\hline
+\vspace{.01em}
+\begin{minipage}{\textwidth}
+\begin{description}
+\item[$\rightarrow$\patternname{Reduce, reuse, recycle}] You can set up spin-off projects when something gets interesting.
+\item[$\rightarrow$\patternname{Carrying capacity}] The group should nurture the people in the group.
+\item[$\rightarrow$\patternname{A specific project}] Set up regular meetings to focus on specific tasks.
+\item[$\rightarrow$\patternname{Scrapbook}] Wind down projects that are no longer helpful.
+\end{description}
+\end{minipage}
+\vspace{.25em}\\
+\hline
+%%%%%%%%%%%%%%%%%%%%
+\rowcolor{Gray!30} \multicolumn{1}{|l|}{\color{Black} \ref{sec:Newcomer}. \patternname{Newcomer}: \textbf{Let's learn from newcomers.}}\\
+\hline
+\vspace{.01em}
+\begin{minipage}{\textwidth}
+\begin{description}
+\item[$\rightarrow$\patternname{Roadmap}] A new person can give feedback on how clear the plan is.
+\item[$\rightarrow$\patternname{A specific project}] Newcomers should adapt their general interest to a specific task.
+\end{description}
+\end{minipage}
+\vspace{.25em}\\
+\hline
+%%%%%%%%%%%%%%%%%%%%
+\rowcolor{Gray!30} \multicolumn{1}{|l|}{\color{Black} \ref{sec:Scrapbook}. \patternname{Scrapbook}: \textbf{Move things that are not of immediate use out of focus.}}\\
+\hline
+\vspace{.01em}
+\begin{minipage}{\textwidth}
+\begin{description}
+\item[$\rightarrow$\patternname{Roadmap}] Just as we keep track of the future plans, we should also keep track of past events.
+\item[$\rightarrow$\patternname{Reduce, reuse, recycle}] Something that is not interesting right now may become interesting later.
+\end{description}
+\end{minipage}
+\vspace{.25em}\\
+\hline
+
+\end{tabular}
+}
+\caption{Forward links specify the ``smaller'' context for each of our patterns.  This helps to explain the core solution that each pattern in our pattern language offers. This table records each instance of \textbf{A}$\rightarrow$\textbf{B} where pattern \textbf{A} refers to pattern \textbf{B}.}
+\end{table}
 
 % deferring a more detailed elaboration of next steps in the educational arena to future work that will build on this basis.
 % Technology has come a long way since Alexander suggested ``you will get the most `power' over the language, and make it your own most effectively, if you write the changes in, at the appropriate places in the book'' \cite[p.~xl]{alexander1977pattern}.

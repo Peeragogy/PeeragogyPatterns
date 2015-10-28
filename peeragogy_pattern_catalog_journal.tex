@@ -6,7 +6,9 @@
 
 \usepackage{natbib}
 
-\usepackage[dvipsnames]{xcolor}
+\usepackage[table,dvipsnames]{xcolor}
+
+%\usepackage{colortbl}
 
 \usepackage{framed}
 
@@ -57,38 +59,48 @@ independent researcher and consultant, Los Angeles}
 
 \begin{document}
 
+\maketitle
+
 \begin{abstract}
 We describe nine design patterns that we have developed in our work on the Peeragogy project, in which we aim to help design the future of learning, inside and outside of institutions, drawing on the principles of free/libre/open source software and open culture.  We use these patterns to build an ``emergent roadmap'' for the project.  Our use of design patterns has some novel features that will be relevant to others working in projects with emergent structure.
 
 \keywords{peer production, peer learning, design patterns}
 \end{abstract}
 
-\maketitle
-
-\input{Introduction}
-\input{Peeragogy_Project}
-\input{Roadmap}
-\input{Use_or_make}
-\input{Carrying_capacity}
-\input{A_specific_project}
-\input{Wrapper}
-\input{Heartbeat}
-% \input{Creating_a_guide}
-\input{Newcomer}
-% \input{Pattern_Audit}
-\input{Scrapbook}
-\input{Distributed_Roadmap}
-%\input{Case_Studies}
+\input{Introduction}        % \label{sec:Introduction}
+\input{Peeragogy_Project}   % \label{sec:Peeragogy}
+\input{Roadmap}             % \label{sec:Roadmap}
+\input{Use_or_make}         % \label{sec:Reduce, reuse, recycle}
+\input{Carrying_capacity}   % \label{sec:Carrying capacity}
+\input{A_specific_project}  % \label{sec:A specific project}
+\input{Wrapper}             % \label{sec:Wrapper}
+\input{Heartbeat}           % \label{sec:Heartbeat}
+\input{Newcomer}            % \label{sec:Newcomer}
+\input{Scrapbook}           % \label{sec:Scrapbook}
+\input{Distributed_Roadmap} % \label{sec:Distributed_Roadmap}
 \input{Conclusion}
 
 \bigskip
 
-{\fontsize{10}{12}\selectfont\raggedright\uppercase{Acknowledgements}} \label{sec:Acknowledgements}\newline
-\vspace{-.2cm}
+%% {\fontsize{10}{12}\selectfont\raggedright\uppercase{Acknowledgements}} \label{sec:Acknowledgements}\newline
+%% \vspace{-.2cm}
+%% \noindent
 
-\noindent David Kane was the paper's shepherd for PLoP'15, and provided detailed comments and many suggestions that improved the draft.  The paper also benefited from discussions with Doug Breitbart, the late George Brett, and Marian Petre, among others.  We are grateful to Amanda Lyons and Fabrizio Terzi for their contributed images.
+\subsection*{Acknowledgements}
+David Kane was the paper's shepherd for PLoP'15, and provided detailed
+comments and many suggestions that improved the draft.  Philip Bachman
+was our on-site shepherd, and Mary Lynn Manns was our workshop
+facilitator.  In addition to their help, the paper also benefited from
+discussions with Doug Breitbart, the late George Brett, and Marian
+Petre, among others.  We are grateful to Amanda Lyons and Fabrizio
+Terzi for their contributed images.
 
-\newpage
+Joseph Corneli was supported by the Future and Emerging Technologies
+(FET) programme within the Seventh Framework Programme for Research of
+the European Commission, under FET-Open Grant number 611553
+(COINVENT).
+
+%\newpage
 \bibliographystyle{acmlarge}
 \bibliography{peeragogy-bib}
 

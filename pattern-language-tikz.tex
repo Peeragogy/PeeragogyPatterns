@@ -4,6 +4,13 @@
 \node (organize) at (5, 0) {{\Large {\sc Organize}}};
 \node (cooperate)[text width=2cm,align=center,rotate=270] at (10, 5) {{\Large {\sc Convene}}};
 \node (convene)[text width=15cm,align=center,rotate=90] at (0, 5) {{\Large {\sc Cooperate}}};
+
+\node(legend)[draw,rectangle,text width=3cm] at (9.25,.75) {\begin{tabular}{p{1.1in}}
+\textbf{Legend}\\ \hline\vspace{-2mm} \textbf{A}\hspace{.41in}\textbf{B}\\
+if pattern \textbf{A} refers to pattern \textbf{B}.
+  \end{tabular}};
+
+\draw[-{Latex[width=2mm]},draw=gray] ([xshift=5mm,yshift=1.75mm]legend.west) -- ([xshift=-18mm,yshift=1.75mm]legend.east);
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \node[below = 5cm of assess] (roadmap) {\ref{sec:Roadmap}. \hyperref[sec:Roadmap]{\emph{Roadmap}}};
 \node (reduce) at (5, 8.75) {\ref{sec:Reduce, reuse, recycle}. \hyperref[sec:Reduce, reuse, recycle]{\emph{Reduce, reuse, recycle}}};
@@ -50,4 +57,5 @@
 \draw[-{Latex[width=2mm]},draw=gray] ([xshift=-.5mm]wrapper.360) -- (newcomer);
 \draw[-{Latex[width=2mm]},draw=gray] (wrapper) -- ([xshift=2.3mm]carryingcapacity.south);
 \draw[-{Latex[width=2mm]},draw=gray] (wrapper) -- (roadmap);
+
 \end{tikzpicture}
