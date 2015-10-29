@@ -6,12 +6,17 @@
 
 \usepackage{natbib}
 
+\let\oldcite\cite
+\let\cite\citep
+\let\citeA\oldcite
+\let\citeNP\oldcite
+\let\citeyear\citeyearpar
+
 \usepackage[table,dvipsnames]{xcolor}
 
 %\usepackage{colortbl}
 
 \usepackage{framed}
-
 
 \usepackage{tikz}
 \usetikzlibrary{calc}
