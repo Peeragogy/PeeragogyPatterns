@@ -44,17 +44,17 @@ if pattern \textbf{A} refers to pattern \textbf{B}.
 \draw[-{Latex[width=2mm]},draw=gray] (roadmap) -- (peeragogyproject.195);
 \draw[-{Latex[width=2mm]},draw=gray] (roadmap) -- (newcomer);
 \draw[-{Latex[width=2mm]},draw=gray] (roadmap) -- (wrapper);
-\draw[-{Latex[width=2mm]},draw=gray] (roadmap) -- (heartbeat);
+\draw[-{Latex[width=2mm]},draw=gray] ([yshift=.3mm]roadmap.west) -- (heartbeat);
 \draw[-{Latex[width=2mm]},draw=gray] (roadmap) -- (aspecificproject);
 % \draw[-{Latex[width=2mm]},draw=gray] (scrapbook) -- (par);
 \draw[-{Latex[width=2mm]},draw=gray] (scrapbook) -- (wrapper);
-\draw[-{Latex[width=2mm]},draw=gray] (scrapbook.110) to[out=120,in=250] (reduce.245);
-\draw[-{Latex[width=2mm]},draw=gray] (scrapbook.70) to[out=45,in=305] (roadmap.330);
+\draw[-{Latex[width=2mm]},draw=gray] (scrapbook.110) to[out=123,in=250] (reduce.245);
+\draw[-{Latex[width=2mm]},draw=gray] (scrapbook.70) to[out=43,in=305] (roadmap.330);
 % \draw[-{Latex[width=2mm]},draw=gray] ([xshift=2mm,yshift=-.4mm]reduce.south) -- (creatingaguide);
 \draw[-{Latex[width=2mm]},draw=gray] (reduce) -- (carryingcapacity);
 \draw[-{Latex[width=2mm]},draw=gray] (reduce) -- (roadmap);
-\draw[-{Latex[width=2mm]},draw=gray] (wrapper.175) -- (heartbeat);
-\draw[-{Latex[width=2mm]},draw=gray] ([xshift=-.5mm]wrapper.360) -- (newcomer);
+\draw[-{Latex[width=2mm]},draw=gray] ([xshift=.7mm]wrapper.175) -- (heartbeat);
+\draw[-{Latex[width=2mm]},draw=gray] ([xshift=-.7mm,yshift=-.3mm]wrapper.360) -- (newcomer);
 \draw[-{Latex[width=2mm]},draw=gray] (wrapper) -- ([xshift=2.3mm]carryingcapacity.south);
 \draw[-{Latex[width=2mm]},draw=gray] (wrapper) -- (roadmap);
 
