@@ -15,9 +15,9 @@
 
 \subsubsection*{Forces}~
 \parbox[t]{.85\textwidth}{
-\textbf{Interface}: the project's appearance to the world tells people how they can use it.\\
-\textbf{Familiarity}: in a simple leader/follower dichotomy, it's easy to know where everyone stands.\\
-\textbf{Equity}: peeragogy requires a possibly less familiar facilitation/colearning dynamic.\\
+\textbf{Interface}: the project shows people how they can use it.\\
+\textbf{Familiar}: the leader/follower dichotomy is easy to understand.\\
+\textbf{Equity}: peeragogy aims for fairness.\\
 }
 
 \subsubsection*{Problem} In an active project, it can be effectively impossible to stay up to date with all of the details.  Not everyone will be able to attend every meeting (see \patternname{Heartbeat}) or read every email.  Project participants can easily get lost and drift away.  The experience can be much more difficult for \patternnameplural{Newcomer}: joining an existing project can feel like trying to climb aboard a rapidly moving vehicle.  If you've taken time off, you may feel like things have moved on so far that you cannot catch up.  Information overload is not the only concern: there is also a problem with missing information.  If they aren't shared, key skills can quickly become bottlenecks (see \patternname{Carrying capacity}).
@@ -38,16 +38,15 @@ There are many data streams around the Wikimedia project.  They comprise
 an elaborate \patternname{Wrapper} function for the project, with components
 that range from Today's Featured Article, which appears on the front page of
 Wikipedia, to formal annual reports from the  nonprofit.\footnote{\url{https://en.wikipedia.org/wiki/Wikipedia:Today\%27s_featured_article}}\textsuperscript{,}\footnote{\url{https://wikimediafoundation.org/wiki/Annual_Report}}
-Wikipedia also plays a \patternname{Wrapper} function in a broader sense.
-It is a typical first port of call for people searching for information about the world.
+
 %% That said, citing Wikipedia in academic writing remains controversial.
 %% One team of researchers found that, all else equal, when a scientific article is
 %% cited on Wikipedia, that does not make it more likely to be cited
 %% elsewhere \cite{marashi2013impact}.  These facts suggest that Wikipedia 
 %% provides a relatively ``thin'' and non-distorting window on the world.
 
-\subsubsection*{Example 2} In-person meetings are no less relevant
-for contemporary humans than they were a century ago, even though we
+\subsubsection*{Example 2} In-person meetings are just as
+relevant for contemporary humans as they were a century ago, even though we
 often work remotely, and have learned more about how to assemble on the fly
 \cite{rheingold2007smart}.  Getting together for conventions, dance
 parties, and commencement ceremonies could comprise an important part
@@ -67,13 +66,21 @@ We have prototyped and deployed a visual ``dashboard'' that people can use to ge
 \WrapperWN
 \end{framed}    
 
-\begin{figure}
+\begin{figure}[t]
+{\centering
+\resizebox{.95\textwidth}{!}{
 \begin{tikzpicture}[every node/.style={anchor=south west,inner sep=0pt},x=1mm, y=1mm,]
      \node (fig1) at (0,0)
        {\includegraphics[width=\textwidth,trim=0mm 135mm 0mm 0mm,clip=true]{figures/peeragogy_dashboard_draft1/peeragogy_dashboard_draft1.jpg}};
-     \node (fig2) at (55, 14)
+     \node (fig2) at (40, 12)
        {\includegraphics[width=.45\textwidth,trim=0mm 0mm 0mm 0mm,clip=true]{figures/dashboard/dash-trans.png}};  
 \end{tikzpicture}
+}
+
+\par}
 \caption{Design for a Peeragogy project dashboard (design sketch by Amanda Lyons, prototype by Fabrizio Terzi; images used with permission).\label{dashboard}}
 \end{figure}
 
+
+
+\newpage

@@ -18,27 +18,24 @@
 
 \subsubsection*{Problem} In order to collaborate, people need a way to share current, though incomplete, understanding of the space they are working in, and to nurture relationships with one another and the other elements of this space.  At the outset, there may not even be a coherent vision for a project -- but a only loose collection of motivations and sentiments.  Once the project is up and running, people are likely to pull in different directions.   
 
-\subsubsection*{Solution} Building a guide to the goals, activities, experiments and working methods can help \patternnameplural{Newcomer} and old-timers alike understand how the nature of their relationship with the project.  This guide may be a research question or an outline, an organizational mission statement, or a business plan.  It may be a design pattern or a pattern language \cite{kohls2010structure}.  It may combine features of a manifesto, a syllabus, and an issue tracker.  The distinguishing qualities of a project \patternname{Roadmap} are that it should be adaptive to circumstances, and that it should ultimately get us from \emph{here} to \emph{there}.  By this same token, any given version of the roadmap is seen as fallible.  Everyone with an interest in the project should have the right to update it, although in practice not everyone will choose to do so.  In lieu of widespread participation, the project's \patternname{Wrapper} should attempt to synthesize an accurate roadmap that is informed by participants' behavior, and should help moderate in case of conflict.  Nevertheless, full consensus is not necessary: different goals, with different \emph{heres} and \emph{theres}, can be pursued separately, while maintaining communication.
+\subsubsection*{Solution}  Building a guide to the goals, activities, experiments and working methods can help \patternnameplural{Newcomer} and old-timers alike understand how the nature of their relationship with the project.  %% This guide may be a research question or an outline, an organizational mission statement, or a business plan.
+It may combine features of a manifesto, a syllabus, and an issue tracker.  It may be a design pattern or a pattern language \cite{kohls2010structure}.  The distinguishing qualities of a project \patternname{Roadmap} are that it should be adaptive to circumstances, and that it should ultimately get us from \emph{here} to \emph{there}.  By this same token, any given version of the roadmap is seen as fallible.  %% Everyone with an interest in the project should have the right to update it, although in practice not everyone will choose to do so.
+In lieu of widespread participation, the project's \patternname{Wrapper} should attempt to synthesize an accurate roadmap that is informed by participants' behavior, and should help moderate in case of conflict.  Nevertheless, full consensus is not necessary: different goals, with different \emph{heres} and \emph{theres}, can be pursued separately, while maintaining communication.
 
 \subsubsection*{Rationale} 
 % DK: This seems more like advice about how to implement the solution than it is an explanation of how the solution addresses the forces from the context/problem [jc: fixed]
-An adaptive roadmap that incorporates multiple simultaneous solution
-paths can achieve integration around core values without
-over-determining or over-constraining participation.  The structure of
-the roadmap needs to be able shift along with its contents: it is an
+In the Peeragogy project our initial roadmap was an outline of the
+first draft of the \emph{Peeragogy Handbook}.  Later, it took the form
+of a schedule of meetings following a regular
+``\patternname{Heartbeat}'' supplemented by a list of upcoming
+submission deadlines.  Most recently, it is expressed in the emergent
+objectives listed in Section \ref{sec:Distributed_Roadmap} of the
+current paper.  We have seen that a list of nice-to-have features created
+in a top-down fashion is comparatively unlikely to \emph{go} anywhere.
+A backlog of tasks and a realistic plan for accomplishing them are
+vastly different things.  An adaptive roadmap is an
 antidote to \patternnameext{Tunnel Vision}
-\cite[pp. 121--124]{david2001software}.  In the Peeragogy project our
-initial roadmap was an outline of the first draft of the
-\emph{Peeragogy Handbook}.  Later, it took the form of a schedule of
-meetings following a regular ``\patternname{Heartbeat}'' supplemented
-by a list of upcoming submission deadlines.  Most recently, it is
-expressed in the emergent objectives listed in Section
-\ref{sec:Distributed_Roadmap} of the current paper.  In each case the
-method used to maintain the roadmap, was ``distributed'', and the
-generated artifact itself, ``emergent''.  By contrast, we've seen that
-a list of nice-to-have features created in a top-down fashion is
-comparatively unlikely to \emph{go} anywhere.  A backlog of tasks and
-a realistic plan for accomplishing them are vastly different things.
+\cite[pp. 121--124]{david2001software}. 
 
 \subsubsection*{Resolution}
 % DK: This seems like Rationale to me [jc: fixed]
@@ -54,61 +51,72 @@ give a \patternnameplural{Newcomer} a reasonable idea of what it would
 mean to participate in the project, and help them decide whether,
 where, and how to get involved.
 
-\subsubsection*{Inversion}
-The \patternname{Roadmap} is something of a paradox.  We can't dictate
-the behavior of other participants, and we often can't even guess
-ourselves what's coming up.  A peeragogical \patternname{Roadmap}
-should prepare people for the \emph{absence} of clear step-by-step
-direction, the \emph{presence} of different view points and
-priorities, and the need to be relatively self-directed.  This pattern
-isn't particularly suitable for a project that needs to be managed in
-a top-down fashion, and that can rely on other coordination tools
-(like contracts) to manage work.
+%% \subsubsection*{Inversion}
+%% The \patternname{Roadmap} is something of a paradox.  We can't dictate
+%% the behavior of other participants, and we often can't even guess
+%% ourselves what's coming up.  A peeragogical \patternname{Roadmap}
+%% should prepare people for the \emph{absence} of clear step-by-step
+%% direction, the \emph{presence} of different view points and
+%% priorities, and the consequent need to be relatively self-directed.  This pattern
+%% isn't particularly suitable for a project that needs to be managed in
+%% a top-down fashion, and that can rely on other coordination tools
+%% (like contracts) to manage work.
 
 \subsubsection*{Example 1}  The \emph{Help} link present on every Wikipedia page could be seen as a
 localized \patternname{Roadmap} for individual user
 engagement.\footnote{\url{https://en.wikipedia.org/wiki/Help:Contents}}
-It tells users what they can do on the site, and gives instructions
-about how to do it:
-
-\begin{quotation}
-\noindent 
-I want to \emph{read} or \emph{find} an article \ldots; 
-I want to \emph{edit} an article \ldots;
-I want to \emph{report a problem} with an article \ldots;
-I want to \emph{create a new article} or \emph{upload media} \ldots;
-I have a \emph{factual question}\ldots
-~[Etc.]
-\end{quotation}
-
+%% It tells users what they can do on the site, and gives instructions
+%% about how to do it:
+%% \begin{quotation}
+%% \noindent 
+%% I want to \emph{read} or \emph{find} an article \ldots; 
+%% I want to \emph{edit} an article \ldots;
+%% I want to \emph{report a problem} with an article \ldots;
+%% I want to \emph{create a new article} or \emph{upload media} \ldots;
+%% I have a \emph{factual question}\ldots
+%% ~[Etc.]
+%% \end{quotation}
 For someone who is prepared to jump in and get to work, there are
 around 30 pages listing articles with various kinds of problems, for
 example articles tagged with style issues, or ``orphaned'' articles
 (i.e., articles with no links from other pages in the
 encyclopedia).\footnote{\url{https://en.wikipedia.org/wiki/Category:Wikipedia_article_cleanup}}\textsuperscript{,}\footnote{\url{https://en.wikipedia.org/wiki/Category:Wikipedia_articles_with_style_issues}}\textsuperscript{,}\footnote{\url{https://en.wikipedia.org/wiki/Category:All_orphaned_articles}}
-
-Community-organized WikiProjects and official Wikimedia projects also announce their objectives  and invite outside involvement (cf.~\patternname{A
-  specific project}).  Wikimedia previously developed
+%
+%
+Wikimedia previously developed
 a detailed strategic plan drawing on community input
-\cite{wikimedia2011plan}.  The current description of the State of
-the Wikimedia Foundation includes a pointer to a two-week 2015
-Strategy Community Consultation (now closed).\footnote{\url{https://meta.wikimedia.org/wiki/Communications/State_of_the_Wikimedia_Foundation}}\textsuperscript{,}\footnote{\url{https://blog.wikimedia.org/2015/02/23/strategy-consultation/}}\textsuperscript{,}\footnote{\url{https://meta.wikimedia.org/wiki/2015_Strategy/Community_consultation}}  The resulting synthesis appears in a blog post by Terence Gilbey, the WMF's Interim Chief Operating Officer.\footnote{\url{https://blog.wikimedia.org/2015/08/27/strategy-potential-mobile-multimedia-translation/}}  He notes: ``Unlike in past years, we are approaching strategy not as a set of goals or objectives, but rather as a direction that will guide the decisions for the organization.''
+\cite{wikimedia2011plan}.  In 2015, a two-week 
+Community Consultation was carried out and
+synthesized, resulting in ``a direction that will guide the decisions for the organization.''\footnote{\url{https://blog.wikimedia.org/2015/02/23/strategy-consultation/}}\textsuperscript{,}\footnote{\url{https://blog.wikimedia.org/2015/08/27/strategy-potential-mobile-multimedia-translation/}}
+%
+%
+ Community-organized WikiProjects often invite outside involvement on \patternname{A
+  specific project}.
+
+\begin{wrapfigure}{r}{.52\textwidth}
+\vspace{-2.05cm}
+\begin{center}
+\includegraphics[width=.5\textwidth,trim=140 30 30 30, clip=true]{alabama-big}
+\end{center}
+\vspace{-.5cm}
+\caption{President's Home, University of Alabama. Public
+  domain.\label{presidents-home}}
+\vspace{-1.9cm}
+\end{wrapfigure}
 
 \subsubsection*{Example 2}
 In a future university run in a peer produced manner, a fancy
-President's Residence isn't likely be needed.  However it may be
-appropriate for project facilitators to gather at a University Hall
-for the primary purpose of working together on the university's
-\patternname{Roadmap}.  For now, we mostly meet online, and in person
-less frequently: at cafes, when passing through town, or at
-conferences.  In New York alone, there are a million members of
-meetup.com with similar habits, although they most likely have never
-heard of
-peeragogy.\footnote{\url{http://blog.meetup.com/thanks-a-million-ny/}}
-There is strength in numbers -- but there is leverage in organization.
-Whatever we balance we strike between ``global'' and ``local''
-operations, the purpose of our roadmap is to help us get organized.
+President's Residence isn't likely be needed.  Leadership would be
+carried out in a more collaborative and distributed manner.  It may be
+appropriate for project facilitators to meet together at a University
+Hall for the primary purpose of working together on the university's
+\patternname{Roadmap}.
 
+
+\smallskip
+\bigskip
+
+% \noindent \begin{minipage}{.45\textwidth}
 \begin{framed}
 \noindent
 \emph{What's Next in the Peeragogy Project}
@@ -118,3 +126,6 @@ If we sense that something needs to change about the project, that is a clue tha
 \end{collectinmacro}
 \RoadmapWN
 \end{framed}
+%\end{minipage}
+
+\newpage
