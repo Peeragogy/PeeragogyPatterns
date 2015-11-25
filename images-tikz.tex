@@ -10,7 +10,7 @@
 %% if pattern \textbf{A} refers to pattern \textbf{B}.
 %%   \end{tabular}};
 
-%% \draw[-{Latex[width=2mm]},draw=gray] ([xshift=5mm,yshift=1.75mm]legend.west) -- ([xshift=-18mm,yshift=1.75mm]legend.east);
+%% \draw[-{Latex[width=2mm]},draw=black] ([xshift=5mm,yshift=1.75mm]legend.west) -- ([xshift=-18mm,yshift=1.75mm]legend.east);
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \node[below = 3.3cm of assess] (roadmap) {{\icon \symbol{"0021D4}}  {\icon \symbol{"0021A6}} {\icon \symbol{"0021C2}}};
 \node (reduce) at (5, 8.8) {{\icon \symbol{"002159}} {\icon \symbol{"00219B}}};
@@ -22,40 +22,40 @@
 \node[below = 1.7cm of wrapper] (scrapbook) {{\icon \symbol{"002168}} {\icon \symbol{"0021B9}} {\icon \symbol{"00214C}}};
 \node[above = 1cm of aspecificproject] (peeragogyproject) {{\icon \symbol{"00220A}} {\icon \symbol{"002158}}};
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\draw[-{Latex[width=2mm]},draw=gray] (peeragogyproject) -- (aspecificproject);
-% \draw[-{Latex[width=2mm]},draw=gray] (aspecificproject) -- (par);
-\draw[-{Latex[width=2mm]},draw=gray] (aspecificproject) -- (roadmap);
-\draw[-{Latex[width=2mm]},draw=gray] (aspecificproject.230) to[out=250,in=40] (scrapbook);
-\draw[-{Latex[width=2mm]},draw=gray] (aspecificproject) -- (carryingcapacity);
-\draw[-{Latex[width=2mm]},draw=gray] (carryingcapacity.335) -- (newcomer.160);
-\draw[-{Latex[width=2mm]},draw=gray] (carryingcapacity.343) -- ([xshift=2mm]roadmap.160);
-\draw[-{Latex[width=2mm]},draw=gray] (carryingcapacity) -- (peeragogyproject);
-\draw[-{Latex[width=2mm]},draw=gray] ([xshift=1mm]carryingcapacity.south) -- (scrapbook.140);
-\draw[-{Latex[width=2mm]},draw=gray] (heartbeat) -- (aspecificproject.210);
-\draw[-{Latex[width=2mm]},draw=gray] (heartbeat) -- (carryingcapacity);
-\draw[-{Latex[width=2mm]},draw=gray] (heartbeat) -- (scrapbook.155);
-\draw[-{Latex[width=2mm]},draw=gray] (heartbeat) -- (reduce.215);
-\draw[-{Latex[width=2mm]},draw=gray] (newcomer) -- ([xshift=4mm]reduce.south);
-\draw[-{Latex[width=2mm]},draw=gray] (newcomer) -- (aspecificproject);
-% \draw[-{Latex[width=2mm]},draw=gray] (newcomer) -- (creatingaguide.north);
-\draw[-{Latex[width=2mm]},draw=gray] (newcomer) -- (roadmap.330);
-\draw[-{Latex[width=2mm]},draw=gray] (newcomer) -- (scrapbook.24);
-% \draw[-{Latex[width=2mm]},draw=gray] (par) -- (scrapbook);
-\draw[-{Latex[width=2mm]},draw=gray] (roadmap) -- (peeragogyproject.205);
-\draw[-{Latex[width=2mm]},draw=gray] (roadmap.330) -- (newcomer);
-\draw[-{Latex[width=2mm]},draw=gray] (roadmap) -- (wrapper);
-\draw[-{Latex[width=2mm]},draw=gray] ([yshift=.3mm]roadmap.187) -- (heartbeat);
-\draw[-{Latex[width=2mm]},draw=gray] (roadmap) -- (aspecificproject);
-% \draw[-{Latex[width=2mm]},draw=gray] (scrapbook) -- (par);
-\draw[-{Latex[width=2mm]},draw=gray] (scrapbook) -- (wrapper);
-\draw[-{Latex[width=2mm]},draw=gray] (scrapbook.110) to[out=123,in=250] (reduce.245);
-\draw[-{Latex[width=2mm]},draw=gray] (scrapbook.70) to[out=43,in=305] (roadmap.315);
-% \draw[-{Latex[width=2mm]},draw=gray] ([xshift=2mm,yshift=-.4mm]reduce.south) -- (creatingaguide);
-\draw[-{Latex[width=2mm]},draw=gray] (reduce) -- (carryingcapacity);
-\draw[-{Latex[width=2mm]},draw=gray] (reduce) -- (roadmap);
-\draw[-{Latex[width=2mm]},draw=gray] ([xshift=.7mm]wrapper.180) -- (heartbeat.10);
-\draw[-{Latex[width=2mm]},draw=gray] ([xshift=-.7mm,yshift=-.3mm]wrapper.360) -- (newcomer.178);
-\draw[-{Latex[width=2mm]},draw=gray] (wrapper) -- ([xshift=2.3mm]carryingcapacity.south);
-\draw[-{Latex[width=2mm]},draw=gray] (wrapper) -- (roadmap);
+\draw[-{Latex[width=2mm]},draw=black] (peeragogyproject) -- (aspecificproject);
+% \draw[-{Latex[width=2mm]},draw=black] (aspecificproject) -- (par);
+\draw[-{Latex[width=2mm]},draw=black] (aspecificproject) -- (roadmap);
+\draw[-{Latex[width=2mm]},draw=black] (aspecificproject.230) to[out=250,in=40] (scrapbook);
+\draw[-{Latex[width=2mm]},draw=black] (aspecificproject) -- (carryingcapacity);
+\draw[-{Latex[width=2mm]},draw=black] (carryingcapacity.335) -- (newcomer.160);
+\draw[-{Latex[width=2mm]},draw=black] (carryingcapacity.343) -- ([xshift=2mm]roadmap.160);
+\draw[-{Latex[width=2mm]},draw=black] (carryingcapacity) -- (peeragogyproject);
+\draw[-{Latex[width=2mm]},draw=black] ([xshift=1mm]carryingcapacity.south) -- (scrapbook.140);
+\draw[-{Latex[width=2mm]},draw=black] (heartbeat) -- (aspecificproject.210);
+\draw[-{Latex[width=2mm]},draw=black] (heartbeat) -- (carryingcapacity);
+\draw[-{Latex[width=2mm]},draw=black] (heartbeat) -- (scrapbook.155);
+\draw[-{Latex[width=2mm]},draw=black] (heartbeat) -- (reduce.215);
+\draw[-{Latex[width=2mm]},draw=black] (newcomer) -- ([xshift=4mm]reduce.south);
+\draw[-{Latex[width=2mm]},draw=black] (newcomer) -- (aspecificproject);
+% \draw[-{Latex[width=2mm]},draw=black] (newcomer) -- (creatingaguide.north);
+\draw[-{Latex[width=2mm]},draw=black] (newcomer) -- (roadmap.330);
+\draw[-{Latex[width=2mm]},draw=black] (newcomer) -- (scrapbook.24);
+% \draw[-{Latex[width=2mm]},draw=black] (par) -- (scrapbook);
+\draw[-{Latex[width=2mm]},draw=black] (roadmap) -- (peeragogyproject.205);
+\draw[-{Latex[width=2mm]},draw=black] (roadmap.330) -- (newcomer);
+\draw[-{Latex[width=2mm]},draw=black] (roadmap) -- (wrapper);
+\draw[-{Latex[width=2mm]},draw=black] ([yshift=.3mm]roadmap.187) -- (heartbeat);
+\draw[-{Latex[width=2mm]},draw=black] (roadmap) -- (aspecificproject);
+% \draw[-{Latex[width=2mm]},draw=black] (scrapbook) -- (par);
+\draw[-{Latex[width=2mm]},draw=black] (scrapbook) -- (wrapper);
+\draw[-{Latex[width=2mm]},draw=black] (scrapbook.110) to[out=123,in=250] (reduce.245);
+\draw[-{Latex[width=2mm]},draw=black] (scrapbook.70) to[out=43,in=305] (roadmap.315);
+% \draw[-{Latex[width=2mm]},draw=black] ([xshift=2mm,yshift=-.4mm]reduce.south) -- (creatingaguide);
+\draw[-{Latex[width=2mm]},draw=black] (reduce) -- (carryingcapacity);
+\draw[-{Latex[width=2mm]},draw=black] (reduce) -- (roadmap);
+\draw[-{Latex[width=2mm]},draw=black] ([xshift=.7mm]wrapper.180) -- (heartbeat.10);
+\draw[-{Latex[width=2mm]},draw=black] ([xshift=-.7mm,yshift=-.3mm]wrapper.360) -- (newcomer.178);
+\draw[-{Latex[width=2mm]},draw=black] (wrapper) -- ([xshift=2.3mm]carryingcapacity.south);
+\draw[-{Latex[width=2mm]},draw=black] (wrapper) -- (roadmap);
 
 \end{tikzpicture}
