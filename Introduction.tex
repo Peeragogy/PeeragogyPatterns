@@ -32,10 +32,10 @@ knowledge for the direct improvement of the life of the people in
 every sphere'' \cite[p.~88]{curti1949university}. Research that
 \emph{adds to the store of knowledge} is another fundamental
 obligation of the university \cite[p.~550]{curti1949university}.
-The university provides one model for collaborative knowledge work
-but it is far from being the only one.
+The university provides a familiar model for collaborative knowledge work
+but it is not the only one.
 % wording issues here
-Furthermore, considering the resounding successes of collaboration in Wikipedia,
+Moreover, considering the resounding successes of collaboration in Wikipedia,
 StackExchange, and free\slash libre\slash open source software
 development, it seems natural to ask what an accredited free\slash
 libre\slash open university might look like.  How would it compare or
@@ -55,10 +55,14 @@ peeragogical endeavor collaboratively build emergent structures that
 are responsive to their changing context, and that in turn, change that
 context.  Some examples focus on education; other examples are found
 in business, government, volunteer, or NGO settings.  In our own
-Peeragogy project, we are using peeragogy to help design the future of
-learning, inside and outside of institutions.
+Peeragogy project, we aim to use peeragogy to help design the future of
+learning.
 
-We have found design patterns useful for organizing our work on this task.  However, there is a difference between the pattern language we present here, and previous collections of design patterns that touch on similar domains -- like \emph{Liberating Voices: A Pattern Language for Communication Revolution} \cite{schuler2008liberating} and \emph{Pedagogical Patterns: Advice for Educators} \cite{bergin2012pedagogical}.  At the level of the pattern template, our innovation is simply to add a ``What's next'' annotation, which anticipates the way the pattern will continue to ``resolve'' in our work.
+We have found design patterns useful for organizing our work on this task.  
+At their simplest, design patterns express a commonly-occurring problem,
+a solution to that problem, and a reason for preferring this solution \cite{meszaros1998pattern}.
+This skeleton is typically fleshed out with examples and other supporting material.
+However, there is a difference between the pattern language we present here, and previous collections of design patterns that touch on similar domains -- like \emph{Liberating Voices: A Pattern Language for Communication Revolution} \cite{schuler2008liberating} and \emph{Pedagogical Patterns: Advice for Educators} \cite{bergin2012pedagogical}.  At the level of the pattern template, our innovation is simply to add a ``What's next'' annotation, which anticipates the way the pattern will continue to ``resolve'' in our work.
 
 % The patterns we introduce here focus on negotiating the execution and implementation of solutions in their practical context.
 %  This often requires compromise, adjustments and even restarts.  
@@ -85,7 +89,7 @@ And yet design becomes a ``living language'' \cite[p.~xvii]{alexander1977pattern
 
 %% Whereas existing projects like Wikimedia's Wikiversity\footnote{\url{https://www.wikiversity.org/}} and the Peer-2-Peer University (P2PU) have created ``a model for lifelong learning alongside traditional formal higher education,''\footnote{\url{https://www.p2pu.org/en/}} they stop well short of offering accredited degrees.  
 
-Our approach to learning and collaboration is likely to be of interest to theorists in fields like organization studies, programming, and computer science, where researchers are increasingly making use of social approaches to software design and development (e.g., via the \href{http://www.agilemanifesto.org/}{Manifesto for Agile Software Development}) as well as agent-based models of computation \cite{minsky1967programming,poetry-workshop}.
+Our approach to learning and collaboration is likely to be of interest to theorists in fields like organization studies, programming, and computer science, where researchers are increasingly making use of social approaches to software design and development as well as agent-based models of computation \cite{minsky1967programming,poetry-workshop}.
 %
 The design pattern community in particular is very familiar with practices that we think of as peeragogical, including shepherding, writers workshops, and design patterns themselves \cite{harrison1999language,coplien1997pattern,meszaros1998pattern}.  We hope to help design pattern authors and researchers expand on these strengths.
 
@@ -105,11 +109,11 @@ The design pattern community in particular is very familiar with practices that 
 \begin{tabular}{|p{.5\textwidth}|}
 \hline
 \emph{Context} of application.\\ \hline
-\emph{Forces} that operate within the context of application. \\ \hline
+\emph{Forces} that operate within the context of application, each with a mnemonic glyph. \\ \hline
 \emph{Problem} the pattern addresses.\\ \hline
 \emph{Solution} to the problem.\\ \hline
 \emph{Rationale} for this solution.\\ \hline
-\emph{Resolution} of the forces.\\ \hline
+\emph{Resolution} of the forces, named in bold.\\ \hline
 \end{tabular}
 \vspace{.1cm}
 
@@ -137,10 +141,10 @@ The design pattern community in particular is very familiar with practices that 
 \end{wraptable}
 
 Table \ref{tab:pattern-template} shows the pattern template that we use throughout the paper.  
-Along with the traditional components of design patterns \cite{meszaros1998pattern}, each of our patterns is fleshed out with two illustrative examples.  The first is descriptive, and looks at how the pattern applies in current Wikimedia projects.  We selected Wikimedia as a source of examples because the project is familiar, a demonstrated success, and readily accessible.  The second example is prospective, and shows show how the pattern could be applied in the design of a future university.  Each pattern concludes with a boxed annotation: ``\emph{What's Next in the Peeragogy Project}''.
+Along with the traditional design patterns components \cite{meszaros1998pattern}, each of our patterns is fleshed out with two illustrative examples.  The first is descriptive, and looks at how the pattern applies in current Wikimedia projects.  We selected Wikimedia as a source of examples because the project is familiar, a demonstrated success, and readily accessible.  The second example is prospective, and shows show how the pattern could be applied in the design of a future university.  Each pattern concludes with a boxed annotation: ``\emph{What's Next in the Peeragogy Project}''.
 
-Section \ref{sec:Peeragogy} defines the concept of \patternname{Peeragogy} more explicitly the form of a design pattern.  Sections \ref{sec:Roadmap}--\ref{sec:Scrapbook} present the other patterns in our pattern language. Figure \ref{fig:connections} illustrates their interconnections, and Table \ref{tab:core} summarizes the ``nuts and bolts'' of the pattern language.
-Section \ref{sec:Distributed_Roadmap} collects our ``What's Next'' steps, and summarizes the outlook of the Peeragogy project.  Section \ref{sec:Conclusion} reviews the contributions made in the paper.%% , positioning this work as a hands-on complement to existing sociological and historical research about peer production (surveyed in \cite{benkler2015peer}).
+Section \ref{sec:Peeragogy} defines the concept of \patternname{Peeragogy} more explicitly the form of a design pattern.  Sections \ref{sec:Roadmap}--\ref{sec:Scrapbook} present the other patterns in our pattern language. Figure \ref{fig:connections} illustrates their interconnections. Table \ref{tab:core} summarizes the ``nuts and bolts'' of the pattern language.
+Section \ref{sec:Distributed_Roadmap} collects our ``What's Next'' steps, summarizes the outlook of the Peeragogy project. Section \ref{sec:Conclusion} reviews the contributions of the work as a whole.%% , positioning this work as a hands-on complement to existing sociological and historical research about peer production (surveyed in \cite{benkler2015peer}).
 
 %OSS: who cares? start w/example?
 \subsection*{A short motivating example}
