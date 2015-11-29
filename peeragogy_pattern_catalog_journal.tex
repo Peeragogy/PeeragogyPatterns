@@ -6,15 +6,15 @@
 
 %% Uncomment these commands to build with xelatex, assuming that the Symbola
 %% font from https://github.com/zhm/symbola is installed locally.
-%\usepackage{fontspec}                                          
-%\setmainfont[Ligatures=TeX,
-%               SmallCapsFont={Latin Modern Roman Caps}
-%              ]{Latin Modern Roman} 
-%\newcommand{\icon}{\fontspec{Symbola}}
+\usepackage{fontspec}                                          
+\setmainfont[Ligatures=TeX,
+               SmallCapsFont={Latin Modern Roman Caps}
+              ]{Latin Modern Roman} 
+\newcommand{\icon}{\fontspec{Symbola}}
 
 %% Here is a hack to make it compile on pdflatex
-\newcommand{\icon}{\tt}
-\renewcommand{\symbol}[1]{{\tiny #1}}
+%\newcommand{\icon}{\tt}
+%\renewcommand{\symbol}[1]{{\tiny #1}}
 
 \usepackage{placeins}
 \usepackage[numbers]{natbib}
@@ -37,6 +37,7 @@
 \usetikzlibrary{calc}
 \usetikzlibrary{positioning,backgrounds,fit,arrows,arrows.meta,shapes,shadows}
 \usetikzlibrary{shapes.multipart}
+\usetikzlibrary{intersections}
 %\usepackage{pgflibraryarrows}
 
 \usepackage{wrapfig}
