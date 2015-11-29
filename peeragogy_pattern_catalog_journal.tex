@@ -4,6 +4,18 @@
 % arara: pdflatex
 \documentclass{llncs}
 
+%% Uncomment these commands to build with xelatex, assuming that the Symbola
+%% font from https://github.com/zhm/symbola is installed locally.
+%\usepackage{fontspec}                                          
+%\setmainfont[Ligatures=TeX,
+%               SmallCapsFont={Latin Modern Roman Caps}
+%              ]{Latin Modern Roman} 
+%\newcommand{\icon}{\fontspec{Symbola}}
+
+%% Here is a hack to make it compile on pdflatex
+\newcommand{\icon}{\tt}
+\renewcommand{\symbol}[1]{{\tiny #1}}
+
 \usepackage{placeins}
 \usepackage[numbers]{natbib}
 
@@ -116,10 +128,10 @@ David Kane was the paper's shepherd for PLoP'15, and provided detailed
 comments and many suggestions that improved the draft.  Philip Bachman
 was our on-site shepherd, and Mary Lynn Manns was our workshop
 facilitator.  The paper also benefited from discussions with Doug
-Breitbart, Marian Petre, and the late George Brett, as well as feedback from
-writers' workshop participants.  We are grateful to Amanda
-Lyons and Fabrizio Terzi for their contributed images.  Other images
-were sourced from the Wikimedia Commons and are public domain.
+Breitbart, Marian Petre, and the late George Brett, as well as
+feedback from writers' workshop participants.  We are grateful to
+Amanda Lyons and Fabrizio Terzi for their contributed images.  Other
+images and icons were sourced from the public domain.
 
 Joseph Corneli was supported by the Future and Emerging Technologies
 (FET) programme within the Seventh Framework Programme for Research of
@@ -129,8 +141,6 @@ the European Commission, under FET-Open Grant number 611553
 %\newpage
 \bibliographystyle{splncsnat}
 \bibliography{peeragogy-bib}
-
-\vspace{-3cm}
 
 
 \end{document}

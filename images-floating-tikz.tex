@@ -1,0 +1,165 @@
+\begin{tikzpicture}[dot/.style={circle,inner sep=1pt,fill,name=#1}]
+%\draw[step=1cm,gray,very thin] (0,0) grid (10,10);
+\node (assess) at (5, 9.75) {{\Large {\sc Assess}}};
+\node (organize) at (5, 1) {{\Large {\sc Organize}}};
+\node (convene)[text width=2cm,align=center,rotate=270] at (9.0, 5.4) {{\Large {\sc Convene}}};
+\node (cooperate)[text width=15cm,align=center,rotate=90] at (.8, 5.2) {{\Large {\sc Cooperate}}};
+
+%% \node(legend)[draw,rectangle,text width=3cm] at (9.25,.75) {\begin{tabular}{p{1.1in}}
+%% \textbf{Legend}\\ \hline\vspace{-2mm} \textbf{A}\hspace{.41in}\textbf{B}\\
+%% if pattern \textbf{A} refers to pattern \textbf{B}.
+%%   \end{tabular}};
+
+%% \draw[draw=none,loosely dotted] ([xshift=5mm,yshift=1.75mm]legend.west) -- ([xshift=-18mm,yshift=1.75mm]legend.east);
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\node[below = 3.3cm of assess] (roadmap) {{\icon \symbol{"0021D4}}  {\icon \symbol{"0021A6}} {\icon \symbol{"0021C2}}};
+\node (reduce) at (5, 8.8) {{\icon \symbol{"002159}} {\icon \symbol{"00219B}}};
+\node (carryingcapacity) at (1.75, 7.15) {{\icon \symbol{"002194}} {\icon \symbol{"0021D7}}};
+\node[below = 3.2cm of carryingcapacity] (heartbeat) {{\icon \symbol{"002185}} {\icon \symbol{"0021A8}}};
+\node (aspecificproject) at (8, 6.5) {{\icon \symbol{"0021A2}} {\icon \symbol{"00213C}}};
+\node[below = 1cm of roadmap] (wrapper) {{\icon \symbol{"002136}} {\icon \symbol{"0021B2}} {\icon \symbol{"0021BD}}};
+\node (newcomer) at (8, 3.25) {{\icon \symbol{"0021E5}} {\icon \symbol{"002180}}};
+\node[below = 1.7cm of wrapper] (scrapbook) {{\icon \symbol{"002168}} {\icon \symbol{"0021B9}} {\icon \symbol{"00214C}}};
+\node[above = 1cm of aspecificproject] (peeragogyproject) {{\icon \symbol{"00220A}} {\icon \symbol{"002158}}};
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\draw[draw=black,loosely dotted,name path=line 1] (peeragogyproject) -- (aspecificproject)node[text opacity=0]                    {1};
+\draw[draw=black,loosely dotted,name path=line 2] (aspecificproject) -- (roadmap)node[text opacity=0]                             {2};
+\draw[draw=black,loosely dotted,name path=line 3] (aspecificproject.230) to[out=250,in=40] (scrapbook)node[text opacity=0]        {3};
+\draw[draw=black,loosely dotted,name path=line 4] (aspecificproject) -- (carryingcapacity)node[text opacity=0]                    {4};
+\draw[draw=black,loosely dotted,name path=line 5] (carryingcapacity.335) -- (newcomer.160)node[text opacity=0]                    {5};
+\draw[draw=black,loosely dotted,name path=line 6] (carryingcapacity.343) -- ([xshift=2mm]roadmap.160)node[text opacity=0]         {6};
+\draw[draw=black,loosely dotted,name path=line 7] (carryingcapacity) -- (peeragogyproject)node[text opacity=0]                    {7};
+\draw[draw=black,loosely dotted,name path=line 8] ([xshift=1mm]carryingcapacity.south) -- (scrapbook.140)node[text opacity=0]     {8};
+\draw[draw=black,loosely dotted,name path=line 9] (heartbeat) -- (aspecificproject.210)node[text opacity=0]                       {9};
+\draw[draw=black,loosely dotted,name path=line 10] (heartbeat) -- (carryingcapacity)node[text opacity=0]                          {10};
+\draw[draw=black,loosely dotted,name path=line 11] (heartbeat) -- (scrapbook.155)node[text opacity=0]                             {11};
+\draw[draw=black,loosely dotted,name path=line 12] (heartbeat) -- (reduce.215)node[text opacity=0]                                {12};
+\draw[draw=black,loosely dotted,name path=line 13] (newcomer) -- ([xshift=4mm]reduce.south)node[text opacity=0]                   {13};
+\draw[draw=black,loosely dotted,name path=line 14] (newcomer) -- (aspecificproject)node[text opacity=0]                           {14};
+\draw[draw=black,loosely dotted,name path=line 15] (newcomer) -- (roadmap.330)node[text opacity=0]                                {15};
+\draw[draw=black,loosely dotted,name path=line 16] (newcomer) -- (scrapbook.24)node[text opacity=0]                               {16};
+\draw[draw=black,loosely dotted,name path=line 17] (roadmap) -- (peeragogyproject.205)node[text opacity=0]                        {17};
+\draw[draw=black,loosely dotted,name path=line 18] (roadmap.200) -- (heartbeat)node[text opacity=0]                               {18};
+\draw[draw=black,loosely dotted,name path=line 19] (scrapbook) -- (wrapper)node[text opacity=0]                                   {19};
+\draw[draw=black,loosely dotted,name path=line 20] (scrapbook.110) to[out=123,in=250] (reduce.245) node[text opacity=0]            {20};
+\draw[draw=black,loosely dotted,name path=line 21] (scrapbook.70) to[out=43,in=305] (roadmap.315) node[text opacity=0]             {21};
+\draw[draw=black,loosely dotted,name path=line 22] (reduce) -- (carryingcapacity)node[text opacity=0]                             {22};
+\draw[draw=black,loosely dotted,name path=line 23] (reduce) -- (roadmap)node[text opacity=0]                                      {23};
+\draw[draw=black,loosely dotted,name path=line 24] ([xshift=.7mm]wrapper.180) -- (heartbeat.10)node[text opacity=0]               {24};
+\draw[draw=black,loosely dotted,name path=line 25] ([xshift=-.7mm,yshift=-.3mm]wrapper.360) -- (newcomer.178)node[text opacity=0] {25};
+\draw[draw=black,loosely dotted,name path=line 26] (wrapper) -- ([xshift=2.3mm]carryingcapacity.south)node[text opacity=0]        {26};
+\draw[draw=black,loosely dotted,name path=line 27] (wrapper) -- (roadmap)node[text opacity=0]                                     {27};
+
+%% \fill[fill=none,name intersections={of=line 7 and line 23,total=\t}]
+%%     \foreach \s in {1,...,\t}{(intersection-\s) circle (2pt) node {$\star$}};
+
+%% \fill[fill=none,name intersections={of=line 12 and line 7,total=\t}]
+%%     \foreach \s in {1,...,\t}{(intersection-\s) circle (2pt) node {$\star$}};
+
+%% \fill[fill=none,name intersections={of=line 20 and line 7,total=\t}]
+%%     \foreach \s in {1,...,\t}{(intersection-\s) circle (2pt) node {$\star$}};
+
+%% \fill[fill=none,name intersections={of=line 13 and line 7,total=\t}]
+%%     \foreach \s in {1,...,\t}{(intersection-\s) circle (2pt) node {$\star$}};
+
+%% \fill[fill=none,name intersections={of=line 12 and line 4,total=\t}]
+%%     \foreach \s in {1,...,\t}{(intersection-\s) circle (2pt) node {$\star$}};
+
+%% \fill[fill=none,name intersections={of=line 12 and line 6,total=\t}]
+%%     \foreach \s in {1,...,\t}{(intersection-\s) circle (2pt) node {$\star$}};
+
+%% \fill[fill=none,name intersections={of=line 12 and line 26,total=\t}]
+%%     \foreach \s in {1,...,\t}{(intersection-\s) circle (2pt) node {$\star$}};
+
+%% \fill[fill=none,name intersections={of=line 12 and line 8,total=\t}]
+%%     \foreach \s in {1,...,\t}{(intersection-\s) circle (2pt) node {$\star$}};
+
+%% \fill[fill=none,name intersections={of=line 18 and line 8,total=\t}]
+%%     \foreach \s in {1,...,\t}{(intersection-\s) circle (2pt) node {$\star$}};
+
+%% \fill[fill=none,name intersections={of=line 24 and line 8,total=\t}]
+%%     \foreach \s in {1,...,\t}{(intersection-\s) circle (2pt) node {$\star$}};
+
+%% \fill[fill=none,name intersections={of=line 9 and line 8,total=\t}]
+%%     \foreach \s in {1,...,\t}{(intersection-\s) circle (2pt) node {$\star$}};
+
+%% \fill[fill=none,name intersections={of=line 4 and line 23,total=\t}]
+%%     \foreach \s in {1,...,\t}{(intersection-\s) circle (2pt) node {$\star$}};
+
+%% \fill[fill=none,name intersections={of=line 4 and line 17,total=\t}]
+%%     \foreach \s in {1,...,\t}{(intersection-\s) circle (2pt) node {$\star$}};
+
+%% \fill[fill=none,name intersections={of=line 4 and line 13,total=\t}]
+%%     \foreach \s in {1,...,\t}{(intersection-\s) circle (2pt) node {$\star$}};
+
+%% \fill[fill=none,name intersections={of=line 17 and line 13,total=\t}]
+%%     \foreach \s in {1,...,\t}{(intersection-\s) circle (2pt) node {$\star$}};
+
+%% \fill[fill=none,name intersections={of=line 2 and line 13,total=\t}]
+%%     \foreach \s in {1,...,\t}{(intersection-\s) circle (2pt) node {$\star$}};
+
+%% \fill[fill=none,name intersections={of=line 9 and line 13,total=\t}]
+%%     \foreach \s in {1,...,\t}{(intersection-\s) circle (2pt) node {$\star$}};
+
+%% \fill[fill=none,name intersections={of=line 3 and line 13,total=\t}]
+%%     \foreach \s in {1,...,\t}{(intersection-\s) circle (2pt) node {$\star$}};
+
+%% \fill[fill=none,name intersections={of=line 3 and line 15,total=\t}]
+%%     \foreach \s in {1,...,\t}{(intersection-\s) circle (2pt) node {$\star$}};
+
+%% \fill[fill=none,name intersections={of=line 3 and line 5,total=\t}]
+%%     \foreach \s in {1,...,\t}{(intersection-\s) circle (2pt) node {$\star$}};
+
+%% \fill[fill=none,name intersections={of=line 3 and line 25,total=\t}]
+%%     \foreach \s in {1,...,\t}{(intersection-\s) circle (2pt) node {$\star$}};
+
+%% \fill[fill=none,name intersections={of=line 26 and line 18,total=\t}]
+%%     \foreach \s in {1,...,\t}{(intersection-\s) circle (2pt) node {$\star$}};
+
+%% \fill[fill=none,name intersections={of=line 15 and line 9,total=\t}]
+%%     \foreach \s in {1,...,\t}{(intersection-\s) circle (2pt) node {$\star$}};
+
+%% \fill[fill=none,name intersections={of=line 20 and line 4,total=\t}]
+%%     \foreach \s in {1,...,\t}{(intersection-\s) circle (2pt) node {$\star$}};
+
+%% \fill[fill=none,name intersections={of=line 20 and line 6,total=\t}]
+%%     \foreach \s in {1,...,\t}{(intersection-\s) circle (2pt) node {$\star$}};
+
+%% \fill[fill=none,name intersections={of=line 20 and line 26,total=\t}]
+%%     \foreach \s in {1,...,\t}{(intersection-\s) circle (2pt) node {$\star$}};
+
+%% \fill[fill=none,name intersections={of=line 20 and line 24,total=\t}]
+%%     \foreach \s in {1,...,\t}{(intersection-\s) circle (2pt) node {$\star$}};
+
+%% \fill[fill=none,name intersections={of=line 20 and line 9,total=\t}]
+%%     \foreach \s in {1,...,\t}{(intersection-\s) circle (2pt) node {$\star$}};
+
+%% \fill[fill=none,name intersections={of=line 20 and line 18,total=\t}]
+%%     \foreach \s in {1,...,\t}{(intersection-\s) circle (2pt) node {$\star$}};
+
+%% \fill[fill=none,name intersections={of=line 5 and line 9,total=\t}]
+%%     \foreach \s in {1,...,\t}{(intersection-\s) circle (2pt) node {$\star$}};
+
+%% \fill[fill=none,name intersections={of=line 5 and line 27,total=\t}]
+%%     \foreach \s in {1,...,\t}{(intersection-\s) circle (2pt) node {$\star$}};
+
+%% \fill[fill=none,name intersections={of=line 9 and line 27,total=\t}]
+%%     \foreach \s in {1,...,\t}{(intersection-\s) circle (2pt) node {$\star$}};
+
+%% \fill[fill=none,name intersections={of=line 21 and line 25,total=\t}]
+%%     \foreach \s in {1,...,\t}{(intersection-\s) circle (2pt) node {$\star$}};
+
+%% \fill[fill=none,name intersections={of=line 21 and line 5,total=\t}]
+%%     \foreach \s in {1,...,\t}{(intersection-\s) circle (2pt) node {$\star$}};
+
+%% \fill[fill=none,name intersections={of=line 21 and line 9,total=\t}]
+%%     \foreach \s in {1,...,\t}{(intersection-\s) circle (2pt) node {$\star$}};
+
+%% \fill[fill=none,name intersections={of=line 26 and line 9,total=\t}]
+%%     \foreach \s in {1,...,\t}{(intersection-\s) circle (2pt) node {$\star$}};
+
+
+
+
+
+\end{tikzpicture}
