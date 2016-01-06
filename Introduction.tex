@@ -1,7 +1,5 @@
 %\setcounter{section}{-1}
 
-\section*{Introduction}\label{sec:Introduction}
-
 \begin{wrapfigure}{r}{.52\textwidth}
 \vspace{-1.15cm}
 \begin{center}
@@ -9,11 +7,12 @@
 \end{center}
 \vspace{-.4cm}
 \captionsetup{font=footnotesize,width=.52\textwidth}
-\caption{A typical university.  Inset captions
-  describe the buildings: ``Ladies Hall, South Dormitory, University
-  Hall, Assembly Halls \& Library, North Dormitory, Science Hall,
-  President's Residence, University Farm, and Washburn Observatory.''
-  This will serve as our ``key''.\label{madison-map}}
+\caption{A typical university.  Inset captions describe the buildings:
+  ``\textsl{Ladies Hall}, \textsl{Dormitories}, \textsl{University
+    Hall}, \textsl{Library} and \textsl{Assembly Hall},
+  \textsl{Science Hall}, \textsl{President's Residence},
+  \textsl{University Farm}, \textsl{Observatory}.''  This image serves
+  as a key to the figures that illustrate our patterns.\label{madison-map}}
 \vspace{-1.5cm}
 \end{wrapfigure}
 
@@ -155,8 +154,18 @@ The design pattern community in particular is very familiar with practices that 
 Table \ref{tab:pattern-template} shows the pattern template that we use throughout the paper.  
 Along with the traditional design patterns components \cite{meszaros1998pattern}, each of our patterns is fleshed out with two illustrative examples.  The first is descriptive, and looks at how the pattern applies in current Wikimedia projects.  We selected Wikimedia as a source of examples because the project is familiar, a demonstrated success, and readily accessible.  The second example is prospective, and shows how the pattern could be applied in the design of a future university.  Each pattern concludes with a boxed annotation that describes ``\emph{What's Next in the Peeragogy Project}''.
 
-Section \ref{sec:Peeragogy} defines the concept of \patternname{Peeragogy} more explicitly the form of a design pattern.  Sections \ref{sec:Roadmap}--\ref{sec:Scrapbook} present the other patterns in our pattern language. Figure \ref{fig:connections} illustrates their interconnections. Table \ref{tab:core} summarizes the ``nuts and bolts'' of the pattern language.
-Section \ref{sec:Distributed_Roadmap} collects our ``What's Next'' steps, summarizes the outlook of the Peeragogy project. Section \ref{sec:Conclusion} reviews the contributions of the work as a whole.%% , positioning this work as a hands-on complement to existing sociological and historical research about peer production (surveyed in \cite{benkler2015peer}).
+Section \ref{sec:Peeragogy} defines the concept of
+\patternname{Peeragogy} more explicitly the form of a design pattern.
+Sections \ref{sec:Roadmap}--\ref{sec:Scrapbook} present the other
+patterns in our pattern language.  Figure \ref{fig:connections}
+illustrates the interconnections between the patterns. Table
+\ref{tab:core} summarizes the ``nuts and bolts'' of the pattern
+language.  After presenting the pattern language, we summarize the
+outlook of the Peeragogy project, and review the contributions of this
+work as a whole.
+%% , positioning this work as a
+%% hands-on complement to existing sociological and historical research
+%% about peer production (surveyed in \cite{benkler2015peer}).
 
 %OSS: who cares? start w/example?
 \subsection*{A short motivating example}
@@ -195,6 +204,8 @@ When one relative \patternname{Newcomer} was still in the onboarding process in 
 \end{table}
 %\rule{0mm}{4.5cm}
 
+\newpage
+
 \afterpage{\clearpage}
 \begin{figure}[p]
 \vspace{-.9in}
@@ -206,90 +217,6 @@ When one relative \patternname{Newcomer} was still in the onboarding process in 
 \vspace{-.9in}
 \caption{Connections between the patterns of peeragogy.  An arrow points from pattern \textbf{A} to pattern \textbf{B} if the text of the description of pattern \textbf{A} references pattern \textbf{B}.  Labels at the borders of the figure correspond to the main sections of the \emph{Peeragogy Handbook}.\label{fig:connections}}
 \end{figure}
-
-%% \begin{table}
-%% {\footnotesize
-%% \newcolumntype{C}{>{\centering\arraybackslash}X}
-%% \begin{tabularx}{\textwidth}{|C|}
-%% \hline
-%% %\rule{\textwidth}{0mm}
-%% \vspace{-.4em}\cellcolor{Gray!30} \color{Black} \ref{sec:Peeragogy}. \patternname{Peeragogy}\vspace{.25em}\\
-%% \hline
-%% \vspace{.01em}
-%% \textbf{How can we find solutions together?}\\
-%% Get concrete about what the real problems are.
-%% \vspace{.4em}\\
-%% \hline 
-%% %%%%%%%%%%%%%%%%%%%%
-%% \vspace{-.4em}\cellcolor{Gray!30} \color{Black} \ref{sec:Roadmap}. \patternname{Roadmap}\vspace{.4em}\\
-%% \hline
-%% \vspace{.01em}
-%% \textbf{How can we get everyone on the same page?}\\
-%% Build a plan that we keep updating as we go along.
-%% \vspace{.4em}\\
-%% \hline
-%% %%%%%%%%%%%%%%%%%%%%
-%% \vspace{-.4em}\cellcolor{Gray!30} \color{Black} \ref{sec:Reduce, reuse, recycle}. \patternname{Reduce, reuse, recycle}\vspace{.4em}\\
-%% \hline
-%% \vspace{.01em}
-%% \textbf{How can we avoid undue isolation?}\\
-%% Use what's there and share what we make.
-%% \vspace{.4em}\\
-%% \hline
-%% %%%%%%%%%%%%%%%%%%%%
-%% \vspace{-.4em}\cellcolor{Gray!30} \color{Black} \ref{sec:Carrying capacity}. \patternname{Carrying capacity}\vspace{.4em}\\
-%% \hline
-%% \vspace{.01em}
-%% \textbf{How can we avoid becoming overwhelmed?}\\
-%% Clearly express when we're frustrated.
-%% \vspace{.4em}\\
-%% \hline
-%% %%%%%%%%%%%%%%%%%%%%
-%% \vspace{-.4em}\cellcolor{Gray!30} \color{Black} \ref{sec:A specific project}. \patternname{A specific project}\vspace{.4em}\\
-%% \hline
-%% \vspace{.01em}
-%% \textbf{How can we avoid becoming perplexed?}\\
-%% Focus on concrete, doable tasks.
-%% \vspace{.4em}\\
-%% \hline
-%% %%%%%%%%%%%%%%%%%%%%
-%% \vspace{-.4em}\cellcolor{Gray!30} \color{Black} \ref{sec:Wrapper}. \patternname{Wrapper}\vspace{.4em}\\
-%% \hline
-%% \vspace{.01em}
-%% \textbf{How can people stay in touch with the project?}\\
-%% Maintain a summary of activities and any adjustments to the plan.
-%% \vspace{.4em}\\
-%% \hline
-%% %%%%%%%%%%%%%%%%%%%%
-%% \vspace{-.4em}\cellcolor{Gray!30} \color{Black} \ref{sec:Heartbeat}. \patternname{Heartbeat}\vspace{.4em}\\
-%% \hline
-%% \vspace{.01em}
-%% \textbf{How can we make the project ``real'' for participants?}\\
-%% Keep up a regular, sustaining rhythm.
-%% \vspace{.4em}\\
-%% \hline
-%% %%%%%%%%%%%%%%%%%%%%
-%% \vspace{-.4em}\cellcolor{Gray!30} \color{Black} \ref{sec:Newcomer}. \patternname{Newcomer}\vspace{.4em}\\
-%% \hline
-%% \vspace{.01em}
-%% \textbf{How can we make the project accessible to new people?}\\
-%% Let's learn together with newcomers.
-%% \vspace{.4em}\\
-%% \hline
-%% %%%%%%%%%%%%%%%%%%%%
-%% \vspace{-.4em}\cellcolor{Gray!30} \color{Black} \ref{sec:Scrapbook}. \patternname{Scrapbook}\vspace{.4em}\\
-%% \hline
-%% \vspace{.01em}
-%% \textbf{How can we maintain focus as time goes by?}\\
-%% Move things that are not of immediate use out of focus.
-%% \vspace{.4em}\\
-%% \hline
-%% \end{tabularx}
-%% }
-%% \smallskip
-%% \caption{An overview of the problems and solutions in our pattern language.\label{tab:core}}
-%% \end{table}
-
 \FloatBarrier
 
 \newpage
