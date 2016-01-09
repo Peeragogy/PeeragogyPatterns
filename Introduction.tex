@@ -7,9 +7,9 @@
 \end{center}
 \vspace{-.4cm}
 \captionsetup{font=footnotesize,width=.52\textwidth}
-\caption{A typical university.  Inset captions describe the buildings:
+\caption{A university campus.  Inset captions describe the buildings:
   ``\textsl{Ladies Hall}, \textsl{Dormitories}, \textsl{University
-    Hall}, \textsl{Library} and \textsl{Assembly Hall},
+    Hall}, \textsl{Library} \textsl{and} \textsl{Assembly Hall},
   \textsl{Science Hall}, \textsl{President's Residence},
   \textsl{University Farm}, \textsl{Observatory}.''  This image serves
   as a key to the figures that illustrate our patterns.\label{madison-map}}
@@ -21,9 +21,9 @@
 This paper  outlines an approach to the organization of learning that draws on the principles of free\slash libre\slash open source software (FLOSS), free culture, and peer production.
 Mako Hill suggests that one recipe for success in peer production is to take a familiar idea -- for example, an encyclopedia -- and make it easy for people to participate in building it \cite[Chapter 1]{mako-thesis}.  We will take hold of ``learning in institutions'' as a map (Figure \ref{madison-map}), although it does not fully conform to our chosen tacitly-familiar territory of \emph{peeragogy}.  To be clear, peeragogy is for \emph{any group of people who want to learn anything}.\footnote{\url{https://www.youtube.com/watch?v=TDRGJzoNbAc}}
 
-Despite thinking about learning and adaptation that
+Although we are thinking about learning and adaptation that
 may take place far outside of formal institutions, the historical
-conception of a university helps give shape to our inqury.
+conception of a university helps give shape to our inquiry.
 %
 The model university is not separate from the life of the state or its
 citizenry, but aims to ``assume leadership in the application of
@@ -38,7 +38,7 @@ Considering the role of collaboration in building reference resources,
 Q\&A sites, and free\slash libre\slash open source software, we may
 well ask: What would an accredited free\slash libre\slash open
 university look like?  How would it compare or contrast with the
-typical or stereotypical image of a university from Figure
+typical or stereotypical image in Figure
 \ref{madison-map}?  Would it have similar structural features, like a
 Library, Dormitory, Science Hall and so on?  Would participants take
 on familiar roles \cite{corneli+crowdsourcing}?  How would it compare
@@ -55,7 +55,7 @@ solutions, since people know the ``problems'' all too well
 \cite{ariyaratneXorganizationX1977}.  Participants in a peeragogical
 endeavor collaboratively build emergent structures that are responsive
 to their changing context, and that in turn, change that context. In
-the Peeragogy project, we are developing the the theory and practice
+the Peeragogy project, we are developing the theory and practice
 of peeragogy.
 
 \emph{Design patterns} offer a methodological framework that we have
@@ -100,7 +100,7 @@ And yet design becomes a ``living language'' \cite[p.~xvii]{alexander1977pattern
 
 Learning and collaboration are of interest to both organizational studies and computer science, where researchers are increasingly making use of social approaches to software design and development, as well as agent-based models of computation \cite{minsky1967programming,poetry-workshop}.
 %
-The design pattern community in particular is very familiar with practices that we think of as peeragogical, including shepherding, writers workshops, and design patterns themselves \cite{harrison1999language,coplien1997pattern,meszaros1998pattern}.  We hope to help design pattern authors and researchers expand on these strengths.
+The design pattern community in particular is very familiar with practices that we think of as peeragogical, including shepherding, writers workshops, and design patterns themselves \cite{harrison1999language,coplien1997pattern,meszaros1998pattern}.  We hope to help design pattern authors and researchers expand on these strengths.  The primary audience we envision for the paper are teams of people who aspire to collaboratively manage their own free/open/libre learning and development projects.
 
 \subsection*{Plan of the work}
 
@@ -152,42 +152,44 @@ The design pattern community in particular is very familiar with practices that 
 \end{wraptable}
 
 Table \ref{tab:pattern-template} shows the pattern template that we use throughout the paper.  
-Along with the traditional design patterns components \cite{meszaros1998pattern}, each of our patterns is fleshed out with two illustrative examples.  The first is descriptive, and looks at how the pattern applies in current Wikimedia projects.  We selected Wikimedia as a source of examples because the project is familiar, a demonstrated success, and readily accessible.  The second example is prospective, and shows how the pattern could be applied in the design of a future university.  Each pattern concludes with a boxed annotation that describes ``\emph{What's Next in the Peeragogy Project}''.
-
-Section \ref{sec:Peeragogy} defines the concept of
-\patternname{Peeragogy} more explicitly the form of a design pattern.
-Sections \ref{sec:Roadmap}--\ref{sec:Scrapbook} present the other
-patterns in our pattern language.  Figure \ref{fig:connections}
-illustrates the interconnections between the patterns. Table
-\ref{tab:core} summarizes the ``nuts and bolts'' of the pattern
-language.  After presenting the pattern language, we summarize the
-outlook of the Peeragogy project, and review the contributions of this
-work as a whole.
+Along with the traditional design patterns components \cite{meszaros1998pattern}, each of our patterns is fleshed out with two illustrative examples.  The first looks at how the pattern applies in current Wikimedia projects.  We selected Wikimedia as a source of examples because the project is familiar, a demonstrated success, and readily accessible.  The second example shows how the pattern could be applied in the design of a free\slash open\slash libre university.  Each pattern concludes with a boxed annotation that describes ``\emph{What's Next in the Peeragogy Project}''.
+%
+Following the convention of the design pattern literature, we write
+the names of patterns in small-caps.  Section \ref{sec:Peeragogy}
+defines the concept of \patternname{Peeragogy} more explicitly as a design pattern.  Sections
+\ref{sec:Roadmap}--\ref{sec:Scrapbook} present the other patterns in
+our pattern language.  This is followed by an emergent roadmap for the Peeragogy
+project and a review of the broader contributions of this work.  Figure
+\ref{fig:connections} illustrates the interconnections between the
+patterns, and Table \ref{tab:core} summarizes their ``nuts and
+bolts''.
+% and which is followed by an emergent roadmap for the Peeragogy
+%project and review of the contributions of this work as a whole.
 %% , positioning this work as a
 %% hands-on complement to existing sociological and historical research
 %% about peer production (surveyed in \cite{benkler2015peer}).
 
 %OSS: who cares? start w/example?
 \subsection*{A short motivating example}
-When one relative \patternname{Newcomer} was still in the onboarding process in Peeragogy project, she hit a wall in understanding the ``patterns'' section in the \emph{Peeragogy Handbook} v1.  A more seasoned peer invited her to a series of separate discussions with their own \patternname{Heartbeat} to flesh out the patterns and make them more accessible.  At that time the list of patterns was simply a list of paragraphs describing recurrent trends.  During those sessions, the impact and meaning of patterns captured her imagination.  She went on to become the champion for the pattern language and its application in the Peeragogy project.  During a ``hive editing'' session, she proposed the template we initially used to give structure to the patterns.  She helped further revise the pattern language for the \emph{Peeragogy Handbook}  v3, and attended PLoP 2015.  While a new domain can easily be overwhelming, this newcomer found \patternname{A specific project} to start with, and scaffolded her knowledge and contributions from that foundation.
+When one of us was a \patternname{Newcomer} to the Peeragogy project, she hit a wall in understanding the ``patterns'' section in the \emph{Peeragogy Handbook} v1.  A more seasoned peer invited her to a series of separate discussions with their own \patternname{Heartbeat} to flesh out the patterns and make them more accessible.  At that time the list of patterns was simply a list of paragraphs describing recurrent trends.  During those sessions, the impact and meaning of patterns captured her imagination.  She went on to become the champion for the pattern language and its application in the Peeragogy project.  During a ``hive editing'' session, she proposed the template we initially used to give structure to the patterns.  She helped further revise the pattern language for the \emph{Peeragogy Handbook}  v3, and attended PLoP 2015.  While a new domain can easily be overwhelming, this newcomer found \patternname{A specific project} to start with, and scaffolded her knowledge and contributions from that foundation.
 
 \begin{table}[h]
 {\small
 \begin{tabular}{ll}
 \begin{tabular}{@{\hspace{-.01\textwidth}}p{.25\textwidth}@{\hspace{-.00\textwidth}}p{.5\textwidth}}
 \textbf{Pattern} & \textbf{How can we\ldots}\\
-\patternname{Peeragogy} &~~find solutions together? \\
-\patternname{Roadmap}&~~get everyone on the same page?\\
-\patternname{Reduce, reuse, recycle}&~~avoid undue isolation?\\
-\patternname{Carrying capacity}&~~avoid becoming overwhelmed?\\
-\patternname{A specific project}&~~avoid becoming perplexed?\\
-\patternname{Wrapper}&~~stay in touch?\\
-\patternname{Heartbeat}&~~make the project ``real'' for participants?\\
-\patternname{Newcomer}&~~make the project accessible to new people?\\
-\patternname{Scrapbook}&~~maintain focus as time goes by?\\
+\patternname{Peeragogy} &~~\ldots find solutions together? \\
+\patternname{Roadmap}&~~\ldots get everyone on the same page?\\
+\patternname{Reduce, reuse, recycle}&~~\ldots avoid undue isolation?\\
+\patternname{Carrying capacity}&~~\ldots avoid becoming overwhelmed?\\
+\patternname{A specific project}&~~\ldots avoid becoming perplexed?\\
+\patternname{Wrapper}&~~\ldots stay in touch?\\
+\patternname{Heartbeat}&~~\ldots make the project ``real'' for participants?\\
+\patternname{Newcomer}&~~\ldots make the project accessible to new people?\\
+\patternname{Scrapbook}&~~\ldots maintain focus as time goes by?\\
 \end{tabular}&
 \begin{tabular}{@{\hspace{-.14\textwidth}}p{.5\textwidth}}
-~\\
+\textbf{Here's how:}\\
 \emph{Figure out what the real problems are.}\\
 \emph{Build a plan that we keep updating.}\\
 \emph{Use what's there and share what we make.}\\
