@@ -98,6 +98,27 @@
 \def\acmArticle#1{\gdef\@acmArticle{#1}}
 \def\@doi{0000000.0000000}
 
+% ----------------
+% Gerry - April 2011 - To assist in the formatting of the NEW ACM Reference format - 'DOI' in tt font, and url string in default
+%% Hyperref is better (e.g. treatment of underscores)! -PHB, 2015-04-12
+%%\usepackage{url}
+%% Instead, from babelbib.sty v1.31:
+\AtBeginDocument{%
+  \providecommand\url[1]{%
+    \PackageError{acmlarge}{No \string\url\space command defined but
+      field URL used\MessageBreak
+      in bibliography}{%
+      Please define a \string\url\space command for printing URLs
+      before \string\begin{document}, e.\,g.\MessageBreak
+        by loading the package `hyperref.sty' or `url.sty'.}%
+    \texttt{#1}%
+    }%
+}
+\def\UrlFont{}
+\newcommand{\BIBand}{\&}
+\def\showDOI#1{\mbox{{\tt DOI:}{#1}}} % Gerry April 2011 - forces the DOI: to 'stay' with the 'url-(string)link' (no need for space at end either)
+% ----------------
+
 \def\@acmWidth{39.14pc}
 \def\@acmMargin{1in}
 
@@ -132,6 +153,20 @@
   \def\@journalNameShort{ACM J. Comput. Cult. Herit.}        
   \def\@permissionCodeOne{1556-4673} 
   \def\@permissionCodeTwo{0100} 
+}
+%
+\DeclareOption{hillsideplop}{
+  \typeout{}
+  \typeout{Using Hillside PLoP 2014-05-01}
+  \typeout{}
+  \def\@journalNameShort{HILLSIDE Proc.\ of Conf.\ on Pattern Lang.\ of Prog.}        
+}
+%
+\DeclareOption{hillsideplop2013}{
+  \typeout{}
+  \typeout{Using Hillside PLoP 2013 2014-05-01}
+  \typeout{}
+  \def\@journalNameShort{HILLSIDE Proc.\ of the 2013 Conf.\ on Pattern Lang.\ of Prog.}        
 }
 %
 \setlength\paperheight {11.25in}%
@@ -975,8 +1010,9 @@ the#1\endcsname{\@thmcounter{#1}}\global
 \def\acmPages#1{\def\@acmPages{#1}}
 \acmPages{\@totalpg\@lastpg\global\advance\@totalpg-\@firstpg\global\advance\@totalpg\@ne\the\@totalpg\ pages}
 
-\gdef\formatline{\@journalNameShort\ \@acmVolume, \@acmNumber, Article~\@acmArticle\ 
-(\monthWord{\@acmMonth}\ \@acmYear), \@acmPages.}
+% \gdef\formatline{\@journalNameShort\ \@acmVolume, \@acmNumber, Article~\@acmArticle\ 
+% (\monthWord{\@acmMonth}\ \@acmYear), \@acmPages.}
+\gdef\formatline{\@journalNameShort\ \@acmVolume\ (\monthWord{\@acmMonth}\ \@acmYear), \@acmPages.}
 
 
 \def\category#1#2#3{\@ifnextchar
